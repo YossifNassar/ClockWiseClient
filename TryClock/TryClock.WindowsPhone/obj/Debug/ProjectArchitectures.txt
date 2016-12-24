@@ -1,0 +1,1 @@
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\TryClock.WindowsPhone.csproj;neutral

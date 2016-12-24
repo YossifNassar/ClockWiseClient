@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\TryClock.WindowsPhone.exe</file>
+  <file>\WinRTXamlToolkit.Controls.DataVisualization.dll</file>
+  <file>\WinRTXamlToolkit.dll</file>
+  <file>\Newtonsoft.Json.dll</file>
+  <file>\System.Net.Http.Extensions.dll</file>
+  <file>\System.Net.Http.Formatting.dll</file>
+  <file>\System.Net.Http.Primitives.dll</file>
+</Files>

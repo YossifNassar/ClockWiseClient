@@ -1,0 +1,1 @@
+E:\Develop\TryClock\TryClock\TryClock.Windows\TryClock.Windows.csproj;neutral

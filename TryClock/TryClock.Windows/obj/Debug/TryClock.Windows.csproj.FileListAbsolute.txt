@@ -1,0 +1,64 @@
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\App.xbf
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\MainPage.xbf
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.xr.xml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.exe
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.pdb
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\resources.pri
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\AppxManifest.xml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.build.appxrecipe
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\App.g.i.cs
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\App.g.cs
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.g.i.cs
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.g.cs
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\XamlTypeInfo.g.cs
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\App.xaml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.xaml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\App.xbf
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.xbf
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\XamlSaveStateFile.xml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\TryClock.Windows.exe
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\TryClock.Windows.pdb
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\priconfig.xml
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\priconfig.xml.intermediate
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\layout.resfiles
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\layout.resfiles.intermediate
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\resources.resfiles
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\resources.resfiles.intermediate
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\pri.resfiles
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\pri.resfiles.intermediate
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\qualifiers.txt
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\qualifiers.txt.intermediate
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\yossif\documents\visual studio 2015\Projects\TryClock\TryClock\TryClock.Windows\obj\Debug\ProjectArchitectures.txt
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\App.xbf
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\MainPage.xbf
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.xr.xml
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.exe
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.pdb
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\resources.pri
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\AppxManifest.xml
+E:\Develop\TryClock\TryClock\TryClock.Windows\bin\Debug\TryClock.Windows.build.appxrecipe
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\App.g.i.cs
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\App.g.cs
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.g.i.cs
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.g.cs
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\XamlTypeInfo.g.cs
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\App.xaml
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.xaml
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\App.xbf
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\MainPage.xbf
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\XamlSaveStateFile.xml
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\TryClock.Windows.exe
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\TryClock.Windows.pdb
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\priconfig.xml
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\priconfig.xml.intermediate
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\layout.resfiles
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\layout.resfiles.intermediate
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\resources.resfiles
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\resources.resfiles.intermediate
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\pri.resfiles
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\pri.resfiles.intermediate
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\qualifiers.txt
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\qualifiers.txt.intermediate
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\Develop\TryClock\TryClock\TryClock.Windows\obj\Debug\ProjectArchitectures.txt

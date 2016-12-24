@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED1B886D-5CA4-4826-ABAD-F0471D9300E6}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TryClock</RootNamespace>
+    <AssemblyName>TryClock.WindowsPhone</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Logic\ClockClient.cs" />
+    <Compile Include="Logic\Metric.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amcharts\amcharts.js" />
+    <Content Include="amcharts\changeLog.txt" />
+    <Content Include="amcharts\funnel.js" />
+    <Content Include="amcharts\gantt.js" />
+    <Content Include="amcharts\gauge.js" />
+    <Content Include="amcharts\images\dragIcon.gif" />
+    <Content Include="amcharts\images\dragIconBlack.gif" />
+    <Content Include="amcharts\images\dragIconH.gif" />
+    <Content Include="amcharts\images\dragIconHBlack.gif" />
+    <Content Include="amcharts\images\dragIconRectBig.png" />
+    <Content Include="amcharts\images\dragIconRectBigBlack.png" />
+    <Content Include="amcharts\images\dragIconRectBigBlackH.png" />
+    <Content Include="amcharts\images\dragIconRectBigH.png" />
+    <Content Include="amcharts\images\dragIconRectSmall.png" />
+    <Content Include="amcharts\images\dragIconRectSmallBlack.png" />
+    <Content Include="amcharts\images\dragIconRectSmallBlackH.png" />
+    <Content Include="amcharts\images\dragIconRectSmallH.png" />
+    <Content Include="amcharts\images\dragIconRoundBig.png" />
+    <Content Include="amcharts\images\dragIconRoundBigBlack.png" />
+    <Content Include="amcharts\images\dragIconRoundBigBlackH.png" />
+    <Content Include="amcharts\images\dragIconRoundBigH.png" />
+    <Content Include="amcharts\images\dragIconRoundSmall.png" />
+    <Content Include="amcharts\images\dragIconRoundSmallBlack.png" />
+    <Content Include="amcharts\images\dragIconRoundSmallBlackH.png" />
+    <Content Include="amcharts\images\dragIconRoundSmallH.png" />
+    <Content Include="amcharts\images\export.png" />
+    <Content Include="amcharts\images\exportWhite.png" />
+    <Content Include="amcharts\images\lens.png" />
+    <Content Include="amcharts\images\lensWhite.png" />
+    <Content Include="amcharts\images\lensWhite_old.png" />
+    <Content Include="amcharts\images\lens_old.png" />
+    <Content Include="amcharts\lang\az.js" />
+    <Content Include="amcharts\lang\bg.js" />
+    <Content Include="amcharts\lang\de.js" />
+    <Content Include="amcharts\lang\es.js" />
+    <Content Include="amcharts\lang\fi.js" />
+    <Content Include="amcharts\lang\fo.js" />
+    <Content Include="amcharts\lang\fr.js" />
+    <Content Include="amcharts\lang\hr.js" />
+    <Content Include="amcharts\lang\hu.js" />
+    <Content Include="amcharts\lang\id.js" />
+    <Content Include="amcharts\lang\is.js" />
+    <Content Include="amcharts\lang\it.js" />
+    <Content Include="amcharts\lang\lt.js" />
+    <Content Include="amcharts\lang\lv.js" />
+    <Content Include="amcharts\lang\mk.js" />
+    <Content Include="amcharts\lang\mn.js" />
+    <Content Include="amcharts\lang\mt.js" />
+    <Content Include="amcharts\lang\nl.js" />
+    <Content Include="amcharts\lang\no.js" />
+    <Content Include="amcharts\lang\pl.js" />
+    <Content Include="amcharts\lang\pt.js" />
+    <Content Include="amcharts\lang\ro.js" />
+    <Content Include="amcharts\lang\ru.js" />
+    <Content Include="amcharts\lang\rw.js" />
+    <Content Include="amcharts\lang\sk.js" />
+    <Content Include="amcharts\lang\so.js" />
+    <Content Include="amcharts\lang\th.js" />
+    <Content Include="amcharts\lang\tr.js" />
+    <Content Include="amcharts\licence.txt" />
+    <Content Include="amcharts\patterns\black\pattern1.png" />
+    <Content Include="amcharts\patterns\black\pattern10.png" />
+    <Content Include="amcharts\patterns\black\pattern11.png" />
+    <Content Include="amcharts\patterns\black\pattern12.png" />
+    <Content Include="amcharts\patterns\black\pattern13.png" />
+    <Content Include="amcharts\patterns\black\pattern14.png" />
+    <Content Include="amcharts\patterns\black\pattern15.png" />
+    <Content Include="amcharts\patterns\black\pattern16.png" />
+    <Content Include="amcharts\patterns\black\pattern17.png" />
+    <Content Include="amcharts\patterns\black\pattern18.png" />
+    <Content Include="amcharts\patterns\black\pattern19.png" />
+    <Content Include="amcharts\patterns\black\pattern2.png" />
+    <Content Include="amcharts\patterns\black\pattern20.png" />
+    <Content Include="amcharts\patterns\black\pattern21.png" />
+    <Content Include="amcharts\patterns\black\pattern3.png" />
+    <Content Include="amcharts\patterns\black\pattern4.png" />
+    <Content Include="amcharts\patterns\black\pattern5.png" />
+    <Content Include="amcharts\patterns\black\pattern6.png" />
+    <Content Include="amcharts\patterns\black\pattern7.png" />
+    <Content Include="amcharts\patterns\black\pattern8.png" />
+    <Content Include="amcharts\patterns\black\pattern9.png" />
+    <Content Include="amcharts\patterns\chalk\pattern1.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern1r.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern2.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern3.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern4.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern5.jpg" />
+    <Content Include="amcharts\patterns\chalk\pattern6.jpg" />
+    <Content Include="amcharts\patterns\white\pattern1.png" />
+    <Content Include="amcharts\patterns\white\pattern10.png" />
+    <Content Include="amcharts\patterns\white\pattern11.png" />
+    <Content Include="amcharts\patterns\white\pattern12.png" />
+    <Content Include="amcharts\patterns\white\pattern13.png" />
+    <Content Include="amcharts\patterns\white\pattern14.png" />
+    <Content Include="amcharts\patterns\white\pattern15.png" />
+    <Content Include="amcharts\patterns\white\pattern16.png" />
+    <Content Include="amcharts\patterns\white\pattern17.png" />
+    <Content Include="amcharts\patterns\white\pattern18.png" />
+    <Content Include="amcharts\patterns\white\pattern19.png" />
+    <Content Include="amcharts\patterns\white\pattern2.png" />
+    <Content Include="amcharts\patterns\white\pattern20.png" />
+    <Content Include="amcharts\patterns\white\pattern21.png" />
+    <Content Include="amcharts\patterns\white\pattern3.png" />
+    <Content Include="amcharts\patterns\white\pattern4.png" />
+    <Content Include="amcharts\patterns\white\pattern5.png" />
+    <Content Include="amcharts\patterns\white\pattern6.png" />
+    <Content Include="amcharts\patterns\white\pattern7.png" />
+    <Content Include="amcharts\patterns\white\pattern8.png" />
+    <Content Include="amcharts\patterns\white\pattern9.png" />
+    <Content Include="amcharts\pie.js" />
+    <Content Include="amcharts\plugins\dataloader\dataloader.js" />
+    <Content Include="amcharts\plugins\dataloader\dataloader.min.js" />
+    <Content Include="amcharts\plugins\dataloader\examples\map_json.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\pie_csv.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\pie_json.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\serial2_json.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\serial_csv.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\serial_json.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\serial_with_dynamic_graphs.html" />
+    <Content Include="amcharts\plugins\dataloader\examples\stock_csv_data_and_events.html" />
+    <Content Include="amcharts\plugins\dataloader\lang\en.js" />
+    <Content Include="amcharts\plugins\dataloader\lang\lt.js" />
+    <Content Include="amcharts\plugins\dataloader\license.txt" />
+    <Content Include="amcharts\plugins\export\examples\export.config.advanced.js" />
+    <Content Include="amcharts\plugins\export\examples\export.config.default.js" />
+    <Content Include="amcharts\plugins\export\examples\funnel.html" />
+    <Content Include="amcharts\plugins\export\examples\gantt.html" />
+    <Content Include="amcharts\plugins\export\examples\gauge.html" />
+    <Content Include="amcharts\plugins\export\examples\images\bicycle.png" />
+    <Content Include="amcharts\plugins\export\examples\images\car.png" />
+    <Content Include="amcharts\plugins\export\examples\images\motorcycle.png" />
+    <Content Include="amcharts\plugins\export\examples\index.html" />
+    <Content Include="amcharts\plugins\export\examples\map.html" />
+    <Content Include="amcharts\plugins\export\examples\pie1.html" />
+    <Content Include="amcharts\plugins\export\examples\pie2.html" />
+    <Content Include="amcharts\plugins\export\examples\pie3.html" />
+    <Content Include="amcharts\plugins\export\examples\pie4.html" />
+    <Content Include="amcharts\plugins\export\examples\radar.html" />
+    <Content Include="amcharts\plugins\export\examples\serial1.html" />
+    <Content Include="amcharts\plugins\export\examples\serial2.html" />
+    <Content Include="amcharts\plugins\export\examples\serial3.html" />
+    <Content Include="amcharts\plugins\export\examples\stock.html" />
+    <Content Include="amcharts\plugins\export\examples\xy.html" />
+    <Content Include="amcharts\plugins\export\export.css" />
+    <Content Include="amcharts\plugins\export\export.js" />
+    <Content Include="amcharts\plugins\export\export.min.js" />
+    <Content Include="amcharts\plugins\export\lang\de.js" />
+    <Content Include="amcharts\plugins\export\lang\en.js" />
+    <Content Include="amcharts\plugins\export\lang\lt.js" />
+    <Content Include="amcharts\plugins\export\libs\blob.js\blob.js" />
+    <Content Include="amcharts\plugins\export\libs\fabric.js\fabric.js" />
+    <Content Include="amcharts\plugins\export\libs\fabric.js\fabric.min.js" />
+    <Content Include="amcharts\plugins\export\libs\FileSaver.js\FileSaver.js" />
+    <Content Include="amcharts\plugins\export\libs\FileSaver.js\FileSaver.min.js" />
+    <Content Include="amcharts\plugins\export\libs\jszip\jszip.js" />
+    <Content Include="amcharts\plugins\export\libs\jszip\jszip.min.js" />
+    <Content Include="amcharts\plugins\export\libs\pdfmake\pdfmake.js" />
+    <Content Include="amcharts\plugins\export\libs\pdfmake\pdfmake.min.js" />
+    <Content Include="amcharts\plugins\export\libs\pdfmake\vfs_fonts.js" />
+    <Content Include="amcharts\plugins\export\libs\xlsx\xlsx.js" />
+    <Content Include="amcharts\plugins\export\libs\xlsx\xlsx.min.js" />
+    <Content Include="amcharts\plugins\responsive\examples\funnel.html" />
+    <Content Include="amcharts\plugins\responsive\examples\gantt.html" />
+    <Content Include="amcharts\plugins\responsive\examples\gauge.html" />
+    <Content Include="amcharts\plugins\responsive\examples\images\bicycle.png" />
+    <Content Include="amcharts\plugins\responsive\examples\images\car.png" />
+    <Content Include="amcharts\plugins\responsive\examples\images\motorcycle.png" />
+    <Content Include="amcharts\plugins\responsive\examples\index.html" />
+    <Content Include="amcharts\plugins\responsive\examples\map.html" />
+    <Content Include="amcharts\plugins\responsive\examples\pie1.html" />
+    <Content Include="amcharts\plugins\responsive\examples\pie2.html" />
+    <Content Include="amcharts\plugins\responsive\examples\pie3.html" />
+    <Content Include="amcharts\plugins\responsive\examples\radar.html" />
+    <Content Include="amcharts\plugins\responsive\examples\serial1.html" />
+    <Content Include="amcharts\plugins\responsive\examples\serial2.html" />
+    <Content Include="amcharts\plugins\responsive\examples\serial3.html" />
+    <Content Include="amcharts\plugins\responsive\examples\stock.html" />
+    <Content Include="amcharts\plugins\responsive\examples\xy.html" />
+    <Content Include="amcharts\plugins\responsive\license.txt" />
+    <Content Include="amcharts\plugins\responsive\responsive.js" />
+    <Content Include="amcharts\plugins\responsive\responsive.min.js" />
+    <Content Include="amcharts\radar.js" />
+    <Content Include="amcharts\serial.js" />
+    <Content Include="amcharts\themes\black.js" />
+    <Content Include="amcharts\themes\chalk.js" />
+    <Content Include="amcharts\themes\dark.js" />
+    <Content Include="amcharts\themes\light.js" />
+    <Content Include="amcharts\themes\patterns.js" />
+    <Content Include="amcharts\thirdPartySoftwareList.txt" />
+    <Content Include="amcharts\xy.js" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\background2.png" />
+    <Content Include="Images\clockback.png" />
+    <Content Include="Images\image.jpg" />
+    <Content Include="Images\whitecircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.22\lib\wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.22.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.22\lib\wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinRTXamlToolkit, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WinRTXamlToolkit.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinRTXamlToolkit.Controls.DataVisualization, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WinRTXamlToolkit.Controls.DataVisualization.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.Controls.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="amcharts\plugins\dataloader\examples\data\map.json" />
+    <None Include="amcharts\plugins\dataloader\examples\data\MSFT.csv" />
+    <None Include="amcharts\plugins\dataloader\examples\data\MSFT_events.csv" />
+    <None Include="amcharts\plugins\dataloader\examples\data\pie.csv" />
+    <None Include="amcharts\plugins\dataloader\examples\data\pie.json" />
+    <None Include="amcharts\plugins\dataloader\examples\data\serial.csv" />
+    <None Include="amcharts\plugins\dataloader\examples\data\serial.json" />
+    <None Include="amcharts\plugins\dataloader\examples\data\serial2.json" />
+    <None Include="amcharts\plugins\dataloader\examples\data\TXN.csv" />
+    <None Include="amcharts\plugins\dataloader\readme.md" />
+    <None Include="amcharts\plugins\export\libs\fabric.js\.travis.yml" />
+    <None Include="amcharts\plugins\export\libs\pdfmake\pdfmake.min.js.map" />
+    <None Include="amcharts\plugins\export\libs\pdfmake\pdfmake.min.map" />
+    <None Include="amcharts\plugins\export\libs\xlsx\LICENSE" />
+    <None Include="amcharts\plugins\export\libs\xlsx\xlsx.min.map" />
+    <None Include="amcharts\plugins\export\LICENSE" />
+    <None Include="amcharts\plugins\export\README.md" />
+    <None Include="amcharts\plugins\responsive\readme.md" />
+    <None Include="amcharts\plugins\responsive\responsive.min.js.map" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="..\TryClock.Shared\TryClock.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
