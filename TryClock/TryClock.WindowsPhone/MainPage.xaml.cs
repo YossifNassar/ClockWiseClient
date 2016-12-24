@@ -42,44 +42,6 @@ namespace TryClock
             
         }
 
-        public async void GetFullResponse()
-        {
-            try
-            {
-                //Create Client 
-                var client = new HttpClient();
-
-                //Define URL. Replace current URL with your URL
-                //Current URL is not a valid one
-
-
-                var uri = new Uri("http://clockapi.azurewebsites.net/metrics");
-
-                //Call. Get response by Async
-                var Response = await client.GetAsync(uri);
-
-                //Result & Code
-                var statusCode = Response.StatusCode;
-
-                //If Response is not Http 200 
-                //then EnsureSuccessStatusCode will throw an exception
-                Response.EnsureSuccessStatusCode();
-
-                //Read the content of the response.
-                //In here expected response is a string.
-                //Accroding to Response you can change the Reading method.
-                //like ReadAsStreamAsync etc..
-                var ResponseText = await Response.Content.ReadAsStringAsync();
-                Debug.WriteLine(ResponseText);
-            }
-
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Error in response" + ex.Message);
-                //...
-            }
-        }
-
         private async void FillMetricsList()
         {
             IEnumerable<Metric> list = await ClockClient.GetMetricsAsync("http://clockapi.azurewebsites.net/metrics");
