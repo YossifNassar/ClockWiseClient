@@ -19,6 +19,7 @@ using TryClock.Logic;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Net.Http;
+using Windows.Networking.Connectivity;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -36,7 +37,10 @@ namespace TryClock
             this.InitializeComponent();
             this.Metrics = new ObservableCollection<String>();
             Metrics.Add("hey");
-            FillMetricsList();
+            if (NetworkInformation.GetInternetConnectionProfile() != null)
+            {
+                FillMetricsList();
+            }
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
             
@@ -67,6 +71,8 @@ namespace TryClock
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+            Debug.WriteLine("time: " +e.Parameter.ToString());
+            textBlock.Text = e.Parameter.ToString().Equals("")? "07:00" : e.Parameter.ToString();
         }
 
         private void textBlock_Tapped(object sender, TappedRoutedEventArgs e)

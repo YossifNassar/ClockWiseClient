@@ -56,7 +56,10 @@
     </RootType>
     <RootType FullName="TryClock.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="TimeChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />

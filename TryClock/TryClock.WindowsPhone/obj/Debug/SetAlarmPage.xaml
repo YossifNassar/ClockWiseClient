@@ -10,10 +10,10 @@
 
     <Grid>
         <TextBlock Text="Set Alarm" Style="{StaticResource HeaderTextBlockStyle}" Width="365" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TimePicker Margin="0,117,0,-117" />
-        <Button x:ConnectionId='1' x:Name="btnSubmit" Content="Submit"
+        <TimePicker x:ConnectionId='1' x:Name="TimePicker"  HorizontalAlignment="Right"                                      Margin="0,113,25,433" Width="365"/>
+        <Button x:ConnectionId='2' x:Name="btnSubmit" Content="Submit"
                                      ClickMode="Press"
-             Margin="240,205,0,378" Width="150" 
+             Margin="225,209,0,374" Width="150" 
              HorizontalAlignment="Left" 
              Background="Blue"/>
     </Grid>

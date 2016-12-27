@@ -27,7 +27,7 @@
                         AlignmentX="Center">
                         </ImageBrush>
                     </Grid.Background>
-                    <TextBlock x:ConnectionId='1' x:Name="textBlock" FontSize="80" HorizontalAlignment="Left" Margin="86,145,0,0" TextWrapping="Wrap" Text="07:00" VerticalAlignment="Top"                          />
+                    <TextBlock x:ConnectionId='1' x:Name="textBlock" FontSize="60" HorizontalAlignment="Left" Margin="109,168,0,0" TextWrapping="Wrap" Text="07:00" VerticalAlignment="Top"                          />
                     <ToggleSwitch x:Name="toggleSwitch" Header="" HorizontalAlignment="Right" Margin="0,280,83,0" VerticalAlignment="Top" Width="178"/>
                 </Grid>
             </PivotItem>
