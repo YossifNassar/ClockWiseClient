@@ -49,7 +49,7 @@ namespace TryClock
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage), TimePicker.Time.ToString());
+            Frame.Navigate(typeof(MainPage), TimePicker.Time.ToString(@"hh\:mm"));
         }
 
         private void TimePicker_TimeChanged(object sender, TimePickerValueChangedEventArgs e)

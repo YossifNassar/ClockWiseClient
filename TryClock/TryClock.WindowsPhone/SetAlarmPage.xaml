@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock Text="Set Alarm" Style="{StaticResource HeaderTextBlockStyle}" Width="365" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TimePicker x:Name="TimePicker"  HorizontalAlignment="Right" TimeChanged="TimePicker_TimeChanged" Margin="0,113,25,433" Width="365"/>
+        <TimePicker x:Name="TimePicker"  HorizontalAlignment="Right" TimeChanged="TimePicker_TimeChanged" Margin="0,113,25,433" Width="353"/>
         <Button x:Name="btnSubmit" Content="Submit"
              Click="btnSubmit_Click" ClickMode="Press"
              Margin="225,209,0,374" Width="150" 

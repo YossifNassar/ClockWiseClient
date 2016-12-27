@@ -36,7 +36,7 @@ namespace TryClock
         {
             this.InitializeComponent();
             this.Metrics = new ObservableCollection<String>();
-            Metrics.Add("hey");
+            Metrics.Add("No metrics to display! check internet connectivity.");
             if (NetworkInformation.GetInternetConnectionProfile() != null)
             {
                 FillMetricsList();
@@ -49,6 +49,7 @@ namespace TryClock
         private async void FillMetricsList()
         {
             IEnumerable<Metric> list = await ClockClient.GetMetricsAsync("http://clockapi.azurewebsites.net/metrics");
+            this.Metrics.Clear();
             foreach(Metric m in list)
             {
                 this.Metrics.Add("Heart rate is: " + m.HeartRate);
