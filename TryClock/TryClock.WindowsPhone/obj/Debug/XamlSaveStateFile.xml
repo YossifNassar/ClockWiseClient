@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\yossif\documents\visual studio 2015\projects\tryclock\tryclock\tryclock.windowsphone\obj\debug\intermediatexaml\tryclock.windowsphone.exe" HashGuid="ccd4c739-0353-8cbc-b744-984968f8d2e8" />
+    <ReferenceAssembly PathName="e:\develop\tryclock\packages\microsoft.toolkit.uwp.notifications.1.2.0\lib\dotnet\microsoft.toolkit.uwp.notifications.dll" HashGuid="9e2431d1-3731-4934-e208-c3fd041897e9" />
     <ReferenceAssembly PathName="e:\develop\tryclock\packages\newtonsoft.json.6.0.4\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="02b12ba6-881e-6b8a-1687-5b2ee1851a11" />
     <ReferenceAssembly PathName="e:\develop\tryclock\packages\microsoft.net.http.2.2.22\lib\wpa81\system.net.http.extensions.dll" HashGuid="1d9d21be-6daa-468f-1b93-4e738d786e1b" />
     <ReferenceAssembly PathName="e:\develop\tryclock\packages\microsoft.aspnet.webapi.client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\system.net.http.formatting.dll" HashGuid="2be584ba-1a95-71f0-a34d-ef121720ead4" />

@@ -102,3 +102,6 @@ E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\SetAlarmPage.g.i.cs
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\SetAlarmPage.g.cs
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\SetAlarmPage.xaml
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\SetAlarmPage.xbf
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.pdb
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.xml

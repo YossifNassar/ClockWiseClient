@@ -8,6 +8,8 @@ using TryClock.Logic;
 using System.Diagnostics;
 using Windows.Networking.Connectivity;
 using Windows.Storage;
+using Windows.UI.Notifications; 
+using Windows.Data.Xml.Dom;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,6 +33,7 @@ namespace TryClock
             FillMetricsList();
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            SetAlarm();
         }
 
         private void LoadSettings()
@@ -40,6 +43,46 @@ namespace TryClock
                 localSettings.Values["alarm_time"] = "07:00";
             }
             textBlock.Text = localSettings.Values["alarm_time"].ToString();
+        }
+
+
+        private void SetAlarm()
+        {
+            string toastContent = 
+                $@"
+                <toast launch='args' scenario='alarm'>
+                    <visual>
+                        <binding template='ToastGeneric'>
+                            <text>Alarm</text>
+                            <text>فيق يا زاهي</text>
+                        </binding>
+                    </visual>
+                    <actions>
+
+                        <action arguments = 'snooze'
+                                content = 'snooze' />
+
+                        <action arguments = 'dismiss'
+                                content = 'dismiss' />
+
+                    </actions>
+                </toast>";
+            XmlDocument xmlContent = new XmlDocument();
+            xmlContent.LoadXml(toastContent);
+            ToastNotification notification = new ToastNotification(xmlContent);
+            string iString = localSettings.Values["alarm_time"].ToString();
+            DateTime oDate = DateTime.ParseExact(iString, "HH:mm", null);
+            Debug.WriteLine(oDate);
+            DateTime dueTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, oDate.Hour, oDate.Minute, oDate.Second);
+            ToastNotificationManager.History.Clear();
+            if(dueTime > DateTime.Now)
+            {
+                ToastNotificationManager.CreateToastNotifier().AddToSchedule(new ScheduledToastNotification(xmlContent, dueTime));
+            }
+            else
+            {
+                ToastNotificationManager.CreateToastNotifier().AddToSchedule(new ScheduledToastNotification(xmlContent, dueTime.AddDays(1)));
+            }
         }
 
         private void Connection_NetworkStatusChanged(object sender)
@@ -86,6 +129,7 @@ namespace TryClock
             {
                 localSettings.Values["alarm_time"] = e.Parameter.ToString();
                 textBlock.Text = e.Parameter.ToString();
+                SetAlarm();
             }    
         }
 

@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\TryClock.WindowsPhone.exe.config">
       <PackagePath>TryClock.WindowsPhone.exe.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\packages\Microsoft.Toolkit.Uwp.Notifications.1.2.0\lib\dotnet\Microsoft.Toolkit.Uwp.Notifications.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>

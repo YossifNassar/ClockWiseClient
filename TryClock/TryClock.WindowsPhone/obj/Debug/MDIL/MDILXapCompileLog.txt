@@ -2,6 +2,8 @@ Compile filter specified.  Only the following files will be processed:
 e:\develop\tryclock\tryclock\tryclock.windowsphone\obj\debug\msil\tryclock.windowsphone.exe
 Processing file: E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\AppxManifest.xml
 File E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\AppxManifest.xml is not in the compile filter. Skipping.
+Processing file: E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\Microsoft.Toolkit.Uwp.Notifications.dll
+File E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\Microsoft.Toolkit.Uwp.Notifications.dll is not in the compile filter. Skipping.
 Processing file: E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\Newtonsoft.Json.dll
 File E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\Newtonsoft.Json.dll is not in the compile filter. Skipping.
 Processing file: E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\MSIL\System.Net.Http.Extensions.dll
