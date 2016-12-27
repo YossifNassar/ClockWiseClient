@@ -8,8 +8,9 @@ using TryClock.Logic;
 using System.Diagnostics;
 using Windows.Networking.Connectivity;
 using Windows.Storage;
-using Windows.UI.Notifications; 
+using Windows.UI.Notifications;
 using Windows.Data.Xml.Dom;
+using Microsoft.Toolkit.Uwp.Notifications;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -48,27 +49,42 @@ namespace TryClock
 
         private void SetAlarm()
         {
-            string toastContent = 
-                $@"
-                <toast launch='args' scenario='alarm'>
-                    <visual>
-                        <binding template='ToastGeneric'>
-                            <text>Alarm</text>
-                            <text>فيق يا زاهي</text>
-                        </binding>
-                    </visual>
-                    <actions>
+            ToastContent content = new ToastContent()
+            {
+                Visual = new ToastVisual()
+                {
+                    BindingGeneric = new ToastBindingGeneric()
+                    {
+                        Children =
+                            {
+                                new AdaptiveText()
+                                {
+                                    Text = "Clock Wise Alarm"
+                                },
 
-                        <action arguments = 'snooze'
-                                content = 'snooze' />
-
-                        <action arguments = 'dismiss'
-                                content = 'dismiss' />
-
-                    </actions>
-                </toast>";
+                                new AdaptiveText()
+                                {
+                                    Text = "Wake Up!"
+                                }
+                            }
+                    }
+                },
+                Scenario = ToastScenario.Alarm,
+                Audio = new ToastAudio()
+                {
+                    Src = new Uri("ms-winsoundevent:Notification.Looping.Alarm")
+                },
+                Actions = new ToastActionsCustom()
+                {
+                    Buttons =
+                        {
+                           new ToastButtonSnooze(),
+                           new ToastButtonDismiss()
+                        }
+                }
+            };
             XmlDocument xmlContent = new XmlDocument();
-            xmlContent.LoadXml(toastContent);
+            xmlContent.LoadXml(content.GetContent());
             ToastNotification notification = new ToastNotification(xmlContent);
             string iString = localSettings.Values["alarm_time"].ToString();
             DateTime oDate = DateTime.ParseExact(iString, "HH:mm", null);
