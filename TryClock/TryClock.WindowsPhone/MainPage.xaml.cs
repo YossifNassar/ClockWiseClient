@@ -1,25 +1,13 @@
 ﻿using System;
-using System.Net;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
-using Windows.UI.Xaml.Media.Imaging;
 using TryClock.Logic;
-using System.Threading.Tasks;
 using System.Diagnostics;
-using System.Net.Http;
 using Windows.Networking.Connectivity;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,28 +19,49 @@ namespace TryClock
     public sealed partial class MainPage : Page
     {
         public ObservableCollection<String> Metrics { get; private set; }
+        ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
         public MainPage()
         {
             this.InitializeComponent();
+            LoadSettings();
             this.Metrics = new ObservableCollection<String>();
-            Metrics.Add("No metrics to display! check internet connectivity.");
-            if (NetworkInformation.GetInternetConnectionProfile() != null)
-            {
-                FillMetricsList();
-            }
+            // Subscribe to the NetworkAvailabilityChanged event
+            NetworkInformation.NetworkStatusChanged += new NetworkStatusChangedEventHandler(Connection_NetworkStatusChanged);
+            FillMetricsList();
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            
+        }
+
+        private void LoadSettings()
+        {
+            if (!localSettings.Values.ContainsKey("alarm_time"))
+            {
+                localSettings.Values["alarm_time"] = "07:00";
+            }
+            textBlock.Text = localSettings.Values["alarm_time"].ToString();
+        }
+
+        private void Connection_NetworkStatusChanged(object sender)
+        {
+            Debug.WriteLine("Internet Connection changed");
         }
 
         private async void FillMetricsList()
         {
-            IEnumerable<Metric> list = await ClockClient.GetMetricsAsync("http://clockapi.azurewebsites.net/metrics");
             this.Metrics.Clear();
-            foreach(Metric m in list)
+            if (NetworkInformation.GetInternetConnectionProfile() != null)
             {
-                this.Metrics.Add("Heart rate is: " + m.HeartRate);
+                IEnumerable<Metric> list = await ClockClient.GetMetricsAsync("http://clockapi.azurewebsites.net/metrics");
+             
+                foreach (Metric m in list)
+                {
+                    this.Metrics.Add("Heart rate is: " + m.HeartRate);
+                }
+            }
+            else
+            {
+                Metrics.Add("No metrics to display! check internet connectivity.");
             }
             
         }
@@ -73,7 +82,11 @@ namespace TryClock
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
             Debug.WriteLine("time: " +e.Parameter.ToString());
-            textBlock.Text = e.Parameter.ToString().Equals("")? "07:00" : e.Parameter.ToString();
+            if (!e.Parameter.ToString().Equals(""))
+            {
+                localSettings.Values["alarm_time"] = e.Parameter.ToString();
+                textBlock.Text = e.Parameter.ToString();
+            }    
         }
 
         private void textBlock_Tapped(object sender, TappedRoutedEventArgs e)
