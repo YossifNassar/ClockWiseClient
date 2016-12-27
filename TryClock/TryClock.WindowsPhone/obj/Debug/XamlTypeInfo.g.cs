@@ -148,7 +148,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "TryClock.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -156,8 +156,9 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             _typeNameTable[4] = "System.Collections.ObjectModel.Collection`1<String>";
             _typeNameTable[5] = "Object";
             _typeNameTable[6] = "String";
+            _typeNameTable[7] = "TryClock.SetAlarmPage";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::TryClock.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -165,6 +166,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             _typeTable[4] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
             _typeTable[5] = typeof(global::System.Object);
             _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::TryClock.SetAlarmPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,6 +204,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
         private object Activate_0_MainPage() { return new global::TryClock.MainPage(); }
         private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
         private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
+        private object Activate_7_SetAlarmPage() { return new global::TryClock.SetAlarmPage(); }
         private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
@@ -261,6 +264,13 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
 
             case 6:   //  String
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  TryClock.SetAlarmPage
+                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_SetAlarmPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

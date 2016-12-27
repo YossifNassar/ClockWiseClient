@@ -664,6 +664,9 @@
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\SetAlarmPage.xbf">
+      <PackagePath>SetAlarmPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\packages\WinRTXamlToolkit.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
     </AppxPackagedFile>

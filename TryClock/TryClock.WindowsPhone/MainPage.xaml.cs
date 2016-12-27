@@ -68,5 +68,10 @@ namespace TryClock
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void textBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SetAlarmPage),"Set Alarm");
+        }
     }
 }
