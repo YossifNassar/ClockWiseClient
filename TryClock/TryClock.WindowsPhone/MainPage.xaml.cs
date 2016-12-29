@@ -11,6 +11,8 @@ using Windows.Storage;
 using Windows.UI.Notifications;
 using Windows.Data.Xml.Dom;
 using Microsoft.Toolkit.Uwp.Notifications;
+using System.Threading;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -40,8 +42,12 @@ namespace TryClock
 
         private void SetChartData()
         {
-            this.radChart.DataContext = new double[] { 20, 30, 50, 10, 60, 40, 20, 80 };
+            ObservableCollection<double> data = new ObservableCollection<double>();
+            this.radChart.DataContext = data;
+            data.Add(1);
+            data.Add(12);
         }
+        
 
         private void LoadSettings()
         {
