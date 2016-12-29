@@ -28,6 +28,24 @@
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\TryClock.WindowsPhone.exe.config">
       <PackagePath>TryClock.WindowsPhone.exe.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.Core.dll">
+      <PackagePath>Telerik.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.Data.dll">
+      <PackagePath>Telerik.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart.dll">
+      <PackagePath>Telerik.UI.Xaml.Chart.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data.dll">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Input.dll">
+      <PackagePath>Telerik.UI.Xaml.Input.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives.dll">
+      <PackagePath>Telerik.UI.Xaml.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\packages\Microsoft.Toolkit.Uwp.Notifications.1.2.0\lib\dotnet\Microsoft.Toolkit.Uwp.Notifications.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
     </AppxPackagedFile>
@@ -48,6 +66,174 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\packages\WinRTXamlToolkit.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\antique.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\antique.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\grayscale.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\grayscale.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\lomo.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\lomo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\moonlight.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\moonlight.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\negative.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\negative.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\noeffect.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\noeffect.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\posterize.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\posterize.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\sepia.jpg">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\sepia.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\basic-group.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\basic-group.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\brightness.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\brightness.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\cancel.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\compare.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\compare.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\contrast.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\contrast.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\effects.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\effects.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\fliph.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\fliph.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\flipv.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\flipv.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\hue.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\hue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\minus.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\plus.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\redo.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\redo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\ListView\Resources\reorder-handle-dark.png">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\ListView\Resources\reorder-handle-dark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\ListView\Resources\reorder-handle-light.png">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\ListView\Resources\reorder-handle-light.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\resize.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\resize.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\rotateCCW.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\rotateCCW.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\rotateCW.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\rotateCW.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\saturation.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\saturation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\save.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\sharpness.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\sharpness.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\temperature.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\temperature.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\transform.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\transform.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\undo.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\undo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\ImageEditor\Icons\vibrance.png">
+      <PackagePath>Telerik.UI.Xaml.Input\ImageEditor\Icons\vibrance.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\Calendar.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\Calendar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\CommonResources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\CommonResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Themes\DataForm.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\Themes\DataForm.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\HubTilePalette.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\HubTilePalette.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ImageEditor.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ImageEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ImageEditorStyles.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ImageEditorStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Themes\ListBox.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\Themes\ListBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\Resources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\Resources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\SharedResources.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\SharedResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeColorsDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeColorsDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeColorsLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeColorsLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Controls.Data\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesLight.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\amcharts\amcharts.js">
       <PackagePath>amcharts\amcharts.js</PackagePath>

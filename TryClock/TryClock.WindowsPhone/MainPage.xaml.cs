@@ -35,6 +35,12 @@ namespace TryClock
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
             SetAlarm();
+            SetChartData();
+        }
+
+        private void SetChartData()
+        {
+            this.radChart.DataContext = new double[] { 20, 30, 50, 10, 60, 40, 20, 80 };
         }
 
         private void LoadSettings()
@@ -91,7 +97,7 @@ namespace TryClock
             Debug.WriteLine(oDate);
             DateTime dueTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, oDate.Hour, oDate.Minute, oDate.Second);
             ToastNotificationManager.History.Clear();
-            if(dueTime > DateTime.Now)
+            if (dueTime > DateTime.Now)
             {
                 ToastNotificationManager.CreateToastNotifier().AddToSchedule(new ScheduledToastNotification(xmlContent, dueTime));
             }

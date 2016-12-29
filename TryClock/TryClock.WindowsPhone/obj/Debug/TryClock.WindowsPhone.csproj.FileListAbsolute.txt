@@ -105,3 +105,15 @@ E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\SetAlarmPage.xbf
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.pdb
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.Core.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.Core.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.Data.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.Data.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Chart.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Chart.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Controls.Data.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Controls.Data.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Input.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Input.xml
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Primitives.dll
+E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\bin\Debug\Telerik.UI.Xaml.Primitives.xml

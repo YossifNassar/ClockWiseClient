@@ -1,3 +1,9 @@
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.Core\Telerik.Core.pri
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.Data\Telerik.Data.pri
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Telerik.UI.Xaml.Chart.pri
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Controls.Data\Telerik.UI.Xaml.Controls.Data.pri
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Telerik.UI.Xaml.Input.pri
+C:\Program Files (x86)\Telerik\UI for Windows Universal R3 2016\SDKs\Windows Phone 8.1\Telerik UI for Windows Universal\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Telerik.UI.Xaml.Primitives.pri
 E:\Develop\TryClock\packages\WinRTXamlToolkit.Controls.DataVisualization.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.Controls.DataVisualization.pri
 E:\Develop\TryClock\packages\WinRTXamlToolkit.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.pri
 E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\obj\Debug\System.Net.Http.Formatting.pri

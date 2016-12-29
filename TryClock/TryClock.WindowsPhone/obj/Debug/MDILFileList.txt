@@ -8,4 +8,10 @@
   <file>\System.Net.Http.Formatting.dll</file>
   <file>\System.Net.Http.Primitives.dll</file>
   <file>\Microsoft.Toolkit.Uwp.Notifications.dll</file>
+  <file>\Telerik.Core.dll</file>
+  <file>\Telerik.Data.dll</file>
+  <file>\Telerik.UI.Xaml.Chart.dll</file>
+  <file>\Telerik.UI.Xaml.Controls.Data.dll</file>
+  <file>\Telerik.UI.Xaml.Input.dll</file>
+  <file>\Telerik.UI.Xaml.Primitives.dll</file>
 </Files>

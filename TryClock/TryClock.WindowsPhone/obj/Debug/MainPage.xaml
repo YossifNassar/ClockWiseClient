@@ -5,6 +5,7 @@
     xmlns:local="using:TryClock"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="using:Telerik.UI.Xaml.Controls.Chart"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -41,8 +42,18 @@
 
             </PivotItem>
             <PivotItem Header="Stats">
-                <!--Pivot content goes here-->
-                <TextBlock Text="Content of pivot item 3."/>
+                <Grid>
+                    <telerik:RadCartesianChart x:Name="radChart">
+                        <telerik:RadCartesianChart.HorizontalAxis>
+                            <telerik:CategoricalAxis/>
+                        </telerik:RadCartesianChart.HorizontalAxis>
+                        <telerik:RadCartesianChart.VerticalAxis>
+                            <telerik:LinearAxis/>
+                        </telerik:RadCartesianChart.VerticalAxis>
+                        <telerik:LineSeries ItemsSource="{Binding}">
+                        </telerik:LineSeries>
+                    </telerik:RadCartesianChart>
+                </Grid>
             </PivotItem>
         </Pivot>
     </Grid>
