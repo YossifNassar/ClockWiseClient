@@ -29,7 +29,8 @@
                         </ImageBrush>
                     </Grid.Background>
                     <TextBlock x:Name="textBlock" FontSize="60" HorizontalAlignment="Left" Margin="109,168,0,0" TextWrapping="Wrap" Text="07:00" VerticalAlignment="Top" Tapped="textBlock_Tapped"/>
-                    <ToggleSwitch x:Name="toggleSwitch" Header="" HorizontalAlignment="Right" Margin="0,280,83,0" VerticalAlignment="Top" Width="178"/>
+                    <ToggleSwitch x:Name="toggleSwitch" Header="Alarm" HorizontalAlignment="Right" Margin="0,280,83,0" VerticalAlignment="Top" Width="178" Toggled="toggleSwitch_Toggled"/>
+                    <TextBlock x:Name="bluetoothStatus" FontSize="20" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Bluetooth is not connected." VerticalAlignment="Top" Margin="135,443,0,0"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Metrics">

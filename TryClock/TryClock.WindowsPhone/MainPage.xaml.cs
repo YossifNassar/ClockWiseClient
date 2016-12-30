@@ -13,6 +13,14 @@ using Windows.Data.Xml.Dom;
 using Microsoft.Toolkit.Uwp.Notifications;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.UI.Xaml;
+using Windows.Storage.Streams;
+using Windows.Networking.Sockets;
+using Newtonsoft.Json.Linq;
+using Windows.Networking.Proximity;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +33,7 @@ namespace TryClock
     {
         public ObservableCollection<String> Metrics { get; private set; }
         ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+        private const string BT_NAME = "HC-06";
 
         public MainPage()
         {
@@ -164,6 +173,71 @@ namespace TryClock
         private void textBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(SetAlarmPage),"Set Alarm");
+        }
+
+        private async void toggleSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            ToggleSwitch toggleSwitch = sender as ToggleSwitch;
+            if (toggleSwitch != null)
+            {
+                if (toggleSwitch.IsOn == true)
+                {
+                    connectToBT();
+                }
+                else
+                {
+
+                }
+            }
+
+        }
+
+        private async void connectToBT()
+        {
+            bool deviceFound = false;
+            if (App.connectionParams.isConnectedToBluetooth)
+            {
+                return;
+            }
+            PeerFinder.AlternateIdentities["Bluetooth:Paired"] = "";
+            var pairedDevices = await PeerFinder.FindAllPeersAsync();
+            if (pairedDevices.Count == 0)
+            {
+                Debug.WriteLine("No paired devices found.");
+            }
+            else
+            {
+                foreach (var device in pairedDevices)
+                {
+                    Debug.WriteLine("current = " + device.DisplayName);
+                    if (device.DisplayName == BT_NAME) 
+                    {
+                        App.connectionParams.chatSocket = new StreamSocket();
+                        try
+                        {
+                            await App.connectionParams.chatSocket.ConnectAsync(device.HostName, "1");
+                            App.connectionParams.chatWriter = new DataWriter(App.connectionParams.chatSocket.OutputStream);
+                            App.connectionParams.chatReader = new DataReader(App.connectionParams.chatSocket.InputStream);
+                            bluetoothStatus.Text = "Bluetooth is connected.";
+                            deviceFound = true;
+                            App.connectionParams.isConnectedToBluetooth = true;
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine(ex.Message);
+                            Debug.WriteLine("Cannot connect to "+BT_NAME);
+                        }
+                    }
+                }
+                if (App.connectionParams.chatSocket == null)
+                {
+                    Debug.WriteLine("HC-06 is Not Paired");
+                }
+                if (!deviceFound)
+                {
+                    bluetoothStatus.Text = "Bluetooth is not connected!";
+                }
+            }
         }
     }
 }

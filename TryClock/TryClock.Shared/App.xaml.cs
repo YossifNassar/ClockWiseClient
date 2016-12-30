@@ -15,11 +15,23 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Windows.Devices.Bluetooth.Rfcomm;
+using Windows.Storage.Streams;
+using Windows.Networking.Sockets;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
 namespace TryClock
 {
+    public class bluetoothConnectionParams
+    {
+        public RfcommDeviceService chatService;
+        public StreamSocket chatSocket;
+        public DataWriter chatWriter;
+        public DataReader chatReader;
+        public bool isConnectedToBluetooth;
+    }
+
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
@@ -28,7 +40,8 @@ namespace TryClock
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
-
+        public static bluetoothConnectionParams connectionParams;
+        public static int num;
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -37,8 +50,66 @@ namespace TryClock
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            connectionParams = new bluetoothConnectionParams();
+            connectionParams.chatReader = null;
+            connectionParams.chatService = null;
+            connectionParams.chatSocket = null;
+            connectionParams.chatWriter = null;
+            connectionParams.isConnectedToBluetooth = false;
         }
 
+        public static string makeString(int[] arr)
+        {
+            string s = "";
+            int i = 0;
+            foreach (int a in arr)
+            {
+                s += a.ToString();
+                if (i != 15)
+                {
+                    s += " ";
+                }
+                else
+                {
+                    s += "]";
+                }
+                i++;
+            }
+            return s;
+        }
+
+        public static async void SendBTSignal(int[] arr)
+        {
+            string s = App.makeString(arr);
+            App.connectionParams.chatWriter.WriteString(s);
+            await App.connectionParams.chatWriter.StoreAsync();
+        }
+
+        public static async void RecieveBTSignal()
+        {
+            char ch = '\0';
+            int fit = 0;
+            while (ch != '\n')
+            {
+                uint sizeFieldCount;
+                IAsyncOperation<uint> taskLoad = App.connectionParams.chatReader.LoadAsync(1);
+                taskLoad.AsTask().Wait();
+                sizeFieldCount = taskLoad.GetResults();
+                if (sizeFieldCount != 1)
+                {
+                    App.connectionParams.isConnectedToBluetooth = false;
+                    return; // the socket was closed before reading.
+                }
+                byte b = App.connectionParams.chatReader.ReadByte();
+                ch = Convert.ToChar(b);
+                if (ch != '\r' && ch != '\n')
+                {
+                    fit *= 10;
+                    fit += Convert.ToInt32(b) - '0';
+                }
+            }
+            App.num = fit;
+        }
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used when the application is launched to open a specific file, to display
