@@ -122,7 +122,7 @@ namespace TryClock
             }
         }
 
-        private void Connection_NetworkStatusChanged(object sender)
+        private async void Connection_NetworkStatusChanged(object sender)
         {
             Debug.WriteLine("Internet Connection changed");
         }
@@ -182,7 +182,7 @@ namespace TryClock
             {
                 if (toggleSwitch.IsOn == true)
                 {
-                    connectToBT();
+                   await connectToBT();
                 }
                 else
                 {
@@ -192,8 +192,9 @@ namespace TryClock
 
         }
 
-        private async void connectToBT()
+        private async Task connectToBT()
         {
+            bluetoothStatus.Text = "Trying to connect...";
             bool deviceFound = false;
             if (App.connectionParams.isConnectedToBluetooth)
             {
@@ -218,7 +219,7 @@ namespace TryClock
                             await App.connectionParams.chatSocket.ConnectAsync(device.HostName, "1");
                             App.connectionParams.chatWriter = new DataWriter(App.connectionParams.chatSocket.OutputStream);
                             App.connectionParams.chatReader = new DataReader(App.connectionParams.chatSocket.InputStream);
-                            bluetoothStatus.Text = "Bluetooth is connected.";
+                            bluetoothStatus.Text = "Arduino is connected.";
                             deviceFound = true;
                             App.connectionParams.isConnectedToBluetooth = true;
                         }
@@ -235,7 +236,7 @@ namespace TryClock
                 }
                 if (!deviceFound)
                 {
-                    bluetoothStatus.Text = "Bluetooth is not connected!";
+                    bluetoothStatus.Text = "Arduino is not connected!";
                 }
             }
         }
