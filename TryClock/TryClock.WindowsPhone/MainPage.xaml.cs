@@ -49,6 +49,21 @@ namespace TryClock
             this.NavigationCacheMode = NavigationCacheMode.Required;
             SetAlarm();
             SetChartData();
+            FillCombobox();
+        }
+
+        private async void FillCombobox()
+        {
+            PeerFinder.AlternateIdentities["Bluetooth:Paired"] = "";
+            var pairedDevices = await PeerFinder.FindAllPeersAsync();
+            if (pairedDevices.Count == 0)
+            {
+                return;
+            }
+            foreach(var device in pairedDevices)
+            {
+                comboDevice.Items.Add(device.DisplayName);
+            }
         }
 
         private void SetChartData()
@@ -185,45 +200,9 @@ namespace TryClock
                 if (toggleSwitch.IsOn == true)
                 {
                     await connectToBT();
-                    //await connectBT();
-
-                }
-                else
-                {
-
                 }
             }
 
-        }
-
-        private async Task connectBT()
-        {
-            var aqsDevices = RfcommDeviceService.GetDeviceSelector(RfcommServiceId.SerialPort);
-            DeviceInformationCollection devices = await DeviceInformation.FindAllAsync(aqsDevices);
-            Debug.WriteLine("got number of devices: " + devices.Count);
-            for (int i = 0; i < devices.Count; i++)
-            {
-                Debug.WriteLine("found: " + devices[i].Name);
-                if (devices[i].Name == "Galaxy S6")
-                {
-                    Debug.WriteLine("Trting to connnect to " + devices[i].Name);
-                    RfcommDeviceService rfcommService = await RfcommDeviceService.FromIdAsync(devices[i].Id);
-                    if (rfcommService == null) return;
-                    StreamSocket Stream = new StreamSocket();
-                    try
-                    {
-                        Debug.WriteLine("connection remote name " + rfcommService.ConnectionServiceName);
-                        await Stream.ConnectAsync(rfcommService.ConnectionHostName, rfcommService.ConnectionServiceName);
-                        Debug.WriteLine("connnected to " + devices[i].Name);
-                    }
-                    catch
-                    {
-                        Debug.WriteLine("Connection failed to: " + devices[i].Name);
-                        return;
-                    }
-                }
-
-            }
         }
 
         private async Task connectToBT()
@@ -245,7 +224,7 @@ namespace TryClock
                 foreach (var device in pairedDevices)
                 {
                     Debug.WriteLine("current = " + device.DisplayName);
-                    if (device.DisplayName == BT_NAME) 
+                    if (device.DisplayName == comboDevice.SelectedItem.ToString()) 
                     {
                         App.connectionParams.chatSocket = new StreamSocket();
                         try
@@ -254,7 +233,7 @@ namespace TryClock
                             await App.connectionParams.chatSocket.ConnectAsync(device.HostName, "1");
                             App.connectionParams.chatWriter = new DataWriter(App.connectionParams.chatSocket.OutputStream);
                             App.connectionParams.chatReader = new DataReader(App.connectionParams.chatSocket.InputStream);
-                            bluetoothStatus.Text = "Arduino is connected.";
+                            bluetoothStatus.Text = "Device is connected.";
                             deviceFound = true;
                             App.connectionParams.isConnectedToBluetooth = true;
                         }
@@ -262,16 +241,17 @@ namespace TryClock
                         {
                             Debug.WriteLine(ex.Message);
                             Debug.WriteLine("Cannot connect to "+BT_NAME);
+                            toggleSwitch.IsOn = false;
                         }
                     }
                 }
                 if (App.connectionParams.chatSocket == null)
                 {
-                    Debug.WriteLine("HC-06 is Not Paired");
+                    Debug.WriteLine("Device is Not Paired");
                 }
                 if (!deviceFound)
                 {
-                    bluetoothStatus.Text = "Arduino is not connected!";
+                    bluetoothStatus.Text = "Device is not connected!";
                 }
             }
         }

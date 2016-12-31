@@ -32,7 +32,12 @@
   <Capabilities>
     <Capability Name="internetClientServer" />
     <DeviceCapability Name="proximity" />
-    <DeviceCapability Name="bluetooth.rfcomm" />
+    <DeviceCapability Name="bluetooth" />
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <m2:Function Type="name:serialPort" />
+      </m2:Device>
+    </m2:DeviceCapability>
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="55d7d466-3deb-4850-8cd1-76683438baa1" />

@@ -65,6 +65,9 @@
       <RootProperty Name="Width" />
       <RootEvent Name="Toggled" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Header" />
+    </RootType>
     <RootType FullName="TryClock.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
       <RootProperty Name="HorizontalAlignment" />
