@@ -49,7 +49,7 @@ namespace TryClock
             this.NavigationCacheMode = NavigationCacheMode.Required;
             SetAlarm();
             SetChartData();
-            FillCombobox();
+            //FillCombobox();
         }
 
         private async void FillCombobox()
@@ -82,6 +82,7 @@ namespace TryClock
                 localSettings.Values["alarm_time"] = "07:00";
             }
             textBlock.Text = localSettings.Values["alarm_time"].ToString();
+            App.connectionParams.isConnectedToBluetooth = false;
         }
 
 
@@ -197,10 +198,22 @@ namespace TryClock
             ToggleSwitch toggleSwitch = sender as ToggleSwitch;
             if (toggleSwitch != null)
             {
-                if (toggleSwitch.IsOn == true)
+                try
                 {
-                    await connectToBT();
+                    if (toggleSwitch.IsOn == true && App.connectionParams.isConnectedToBluetooth == false)
+                    {
+                        await connectToBT();
+                    }
+                    if (toggleSwitch.IsOn == false && App.connectionParams.isConnectedToBluetooth == true)
+                    {
+                        disconnectFromBT();
+                    }
                 }
+                catch(Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+
             }
 
         }
@@ -224,7 +237,7 @@ namespace TryClock
                 foreach (var device in pairedDevices)
                 {
                     Debug.WriteLine("current = " + device.DisplayName);
-                    if (device.DisplayName == comboDevice.SelectedItem.ToString()) 
+                    if (device.DisplayName == BT_NAME) 
                     {
                         App.connectionParams.chatSocket = new StreamSocket();
                         try
@@ -254,6 +267,21 @@ namespace TryClock
                     bluetoothStatus.Text = "Device is not connected!";
                 }
             }
+        }
+
+        private void disconnectFromBT()
+        {
+            App.connectionParams.chatSocket.Dispose();
+            App.connectionParams.chatReader.DetachStream();
+            App.connectionParams.chatReader.Dispose();
+            App.connectionParams.chatWriter.DetachStream();
+            App.connectionParams.chatWriter.Dispose();
+            App.connectionParams.chatReader = null;
+            App.connectionParams.chatService = null;
+            App.connectionParams.chatSocket = null;
+            App.connectionParams.chatWriter = null;
+            App.connectionParams.isConnectedToBluetooth = false;
+            bluetoothStatus.Text = "Not connected";
         }
     }
 }
