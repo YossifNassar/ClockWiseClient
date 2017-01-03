@@ -23,6 +23,7 @@ using Newtonsoft.Json.Linq;
 using Windows.Networking.Proximity;
 using Windows.Devices.Bluetooth.Rfcomm;
 using Windows.Devices.Enumeration;
+using Windows.UI.WebUI;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -50,6 +51,21 @@ namespace TryClock
             SetAlarm();
             SetChartData();
             //FillCombobox();
+            
+        }
+
+        private async Task StartMetricsListener()
+        {
+            try
+            {
+                App.RecieveBTSignal();
+                appStatus.Text = App.res.ToString();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+
         }
 
         private async void FillCombobox()
@@ -203,6 +219,7 @@ namespace TryClock
                     if (toggleSwitch.IsOn == true && App.connectionParams.isConnectedToBluetooth == false)
                     {
                         await connectToBT();
+                        await StartMetricsListener();
                     }
                     if (toggleSwitch.IsOn == false && App.connectionParams.isConnectedToBluetooth == true)
                     {
@@ -249,6 +266,7 @@ namespace TryClock
                             bluetoothStatus.Text = "Device is connected.";
                             deviceFound = true;
                             App.connectionParams.isConnectedToBluetooth = true;
+                            
                         }
                         catch (Exception ex)
                         {
@@ -282,6 +300,12 @@ namespace TryClock
             App.connectionParams.chatWriter = null;
             App.connectionParams.isConnectedToBluetooth = false;
             bluetoothStatus.Text = "Not connected";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Recieving from BT");
+            StartMetricsListener();
         }
     }
 }

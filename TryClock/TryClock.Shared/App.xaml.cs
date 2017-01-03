@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Devices.Bluetooth.Rfcomm;
 using Windows.Storage.Streams;
 using Windows.Networking.Sockets;
+using System.Diagnostics;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -42,6 +43,7 @@ namespace TryClock
 #endif
         public static bluetoothConnectionParams connectionParams;
         public static int num;
+        public static string res;
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -85,12 +87,14 @@ namespace TryClock
             await App.connectionParams.chatWriter.StoreAsync();
         }
 
-        public static async void RecieveBTSignal()
+        public static void RecieveBTSignal()
         {
             char ch = '\0';
-            int fit = 0;
-            while (ch != '\n')
+            App.res = "";
+            int cnt = 1;
+            while (cnt > 0)
             {
+                cnt--;
                 uint sizeFieldCount;
                 IAsyncOperation<uint> taskLoad = App.connectionParams.chatReader.LoadAsync(1);
                 taskLoad.AsTask().Wait();
@@ -104,11 +108,10 @@ namespace TryClock
                 ch = Convert.ToChar(b);
                 if (ch != '\r' && ch != '\n')
                 {
-                    fit *= 10;
-                    fit += Convert.ToInt32(b) - '0';
-                }
+                    App.res += Convert.ToString(b);
+                }          
             }
-            App.num = fit;
+            Debug.WriteLine(App.res);
         }
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
