@@ -87,7 +87,7 @@ namespace TryClock
             await App.connectionParams.chatWriter.StoreAsync();
         }
 
-        public static void RecieveBTSignal()
+        public static string RecieveBTSignal()
         {
             char ch = '\0';
             App.res = "";
@@ -102,7 +102,7 @@ namespace TryClock
                 if (sizeFieldCount != 1)
                 {
                     App.connectionParams.isConnectedToBluetooth = false;
-                    return; // the socket was closed before reading.
+                    return String.Empty; // the socket was closed before reading.
                 }
                 byte b = App.connectionParams.chatReader.ReadByte();
                 ch = Convert.ToChar(b);
@@ -111,7 +111,7 @@ namespace TryClock
                     App.res += Convert.ToString(b);
                 }          
             }
-            Debug.WriteLine(App.res);
+            return App.res;
         }
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

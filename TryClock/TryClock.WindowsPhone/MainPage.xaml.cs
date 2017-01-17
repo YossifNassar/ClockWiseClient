@@ -37,6 +37,8 @@ namespace TryClock
         public ObservableCollection<String> Metrics { get; private set; }
         ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
         private const string BT_NAME = "HC-06";
+        private static DispatcherTimer dispatcherTimer;
+        private static ObservableCollection<double> cartesianChartData = new ObservableCollection<double>() {0 };
 
         public MainPage()
         {
@@ -51,22 +53,45 @@ namespace TryClock
             SetAlarm();
             SetChartData();
             //FillCombobox();
-            
+            this.myChart.Series[0].ItemsSource = CreateData();
+            //timer 
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += DispatcherTimer_Tick;
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 300);
+            dispatcherTimer.Start();
         }
 
-        private async Task StartMetricsListener()
+        private void DispatcherTimer_Tick(object sender, object e)
         {
             try
             {
-                App.RecieveBTSignal();
-                appStatus.Text = App.res.ToString();
+                Random rnd = new Random();
+                int heartRate = ((rnd.Next()) % 100);
+                heartTextBlock.Text = heartRate.ToString();
+                cartesianChartData.Add(heartRate);
+                String btSignal = App.RecieveBTSignal();
             }
             catch(Exception ex)
             {
                 Debug.WriteLine(ex.Message);
             }
 
+            
         }
+
+        public class Data
+        {
+            public double Value { get; set; }
+        }
+
+        public List<Data> CreateData()
+        {
+            List<Data> data = new List<Data>();
+            data.Add(new Data() { Value = 15.5 });
+            data.Add(new Data() { Value = 8.5 });
+            return data;
+        }
+
 
         private async void FillCombobox()
         {
@@ -84,10 +109,8 @@ namespace TryClock
 
         private void SetChartData()
         {
-            ObservableCollection<double> data = new ObservableCollection<double>();
-            this.radChart.DataContext = data;
-            data.Add(1);
-            data.Add(12);
+            this.radChart.DataContext = cartesianChartData;
+            this.radChart2.DataContext = cartesianChartData;
         }
         
 
@@ -219,7 +242,6 @@ namespace TryClock
                     if (toggleSwitch.IsOn == true && App.connectionParams.isConnectedToBluetooth == false)
                     {
                         await connectToBT();
-                        await StartMetricsListener();
                     }
                     if (toggleSwitch.IsOn == false && App.connectionParams.isConnectedToBluetooth == true)
                     {
@@ -302,10 +324,6 @@ namespace TryClock
             bluetoothStatus.Text = "Not connected";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Debug.WriteLine("Recieving from BT");
-            StartMetricsListener();
-        }
+
     }
 }

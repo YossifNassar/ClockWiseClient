@@ -13,17 +13,17 @@
         <Pivot x:Name="rootPivot" Title="Clock Wise">
             <Pivot.Background>
                 <ImageBrush Stretch="Fill"
-                        ImageSource="/Images/background2.png" 
+                        ImageSource="/Images/bg3.jpg" 
                         AlignmentY="Center" 
                         AlignmentX="Center">
                 </ImageBrush>
             </Pivot.Background>
             <PivotItem Header="Alarms">
                 <!--Pivot content goes here-->
-                <Grid Margin="0,-47,-0.333,46.833">
+                <Grid >
                     <Grid.Background>
                         <ImageBrush Stretch="Uniform"
-                        ImageSource="/Images/clockback.png" 
+                        ImageSource="/Images/circle3.png" 
                         AlignmentY="Center" 
                         AlignmentX="Center">
                         </ImageBrush>
@@ -38,17 +38,20 @@
             <PivotItem Header="Metrics">
                 <!--Pivot content goes here-->
                 <Grid>
-                    <Button Content="Recieve" Foreground="SteelBlue" IsEnabled="True" DoubleTapped="Button_Click" Tapped="Button_Click" Click="Button_Click"/>
-                    <TextBlock x:Name="appStatus" Foreground="SteelBlue" FontSize="15" HorizontalAlignment="Left" Text="data from arduino" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,46,0,0"/>
-                    <ListView Margin="10" Name="lvUsers" ItemsSource="{Binding Metrics}">
+                    <Grid.Background>
+                        <ImageBrush Stretch="Uniform"
+                        ImageSource="/Images/circle3.png" 
+                        AlignmentY="Center" 
+                        AlignmentX="Center">
+                        </ImageBrush>
+                    </Grid.Background>
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="71" Margin="243,192,0,0" VerticalAlignment="Top" Width="51" Source="Images/heart.png"/>
+                    <TextBlock x:Name="heartTextBlock" FontSize="140" HorizontalAlignment="Left" Margin="76,164,0,0" TextWrapping="Wrap" Text="82" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="bmi" FontSize="30" HorizontalAlignment="Left" Margin="243,263,0,0" TextWrapping="Wrap" Text="bpm" VerticalAlignment="Top"/>
+                    <ListView Margin="10,-16,10,36" Name="lvUsers" ItemsSource="{Binding Metrics}">
                     </ListView>
-                    
-                </Grid>
 
-            </PivotItem>
-            <PivotItem Header="Stats">
-                <Grid>
-                    <telerik:RadCartesianChart x:Name="radChart">
+                    <telerik:RadCartesianChart x:Name="radChart2" Margin="117,289,110,117" Foreground="Azure">
                         <telerik:RadCartesianChart.HorizontalAxis>
                             <telerik:CategoricalAxis/>
                         </telerik:RadCartesianChart.HorizontalAxis>
@@ -58,6 +61,31 @@
                         <telerik:LineSeries ItemsSource="{Binding}">
                         </telerik:LineSeries>
                     </telerik:RadCartesianChart>
+
+
+                </Grid>
+
+            </PivotItem>
+            <PivotItem Header="Stats">
+                <Grid>
+                    <telerik:RadCartesianChart x:Name="radChart" Margin="0,0,25,316" Foreground="Azure">
+                        <telerik:RadCartesianChart.HorizontalAxis>
+                            <telerik:CategoricalAxis/>
+                        </telerik:RadCartesianChart.HorizontalAxis>
+                        <telerik:RadCartesianChart.VerticalAxis>
+                            <telerik:LinearAxis/>
+                        </telerik:RadCartesianChart.VerticalAxis>
+                        <telerik:LineSeries ItemsSource="{Binding}">
+                        </telerik:LineSeries>
+                    </telerik:RadCartesianChart>
+
+                    <telerik:RadPieChart  x:Name="myChart" ClipToBounds="False" PaletteName="DefaultDark" Margin="0,195,25,53">
+                        <telerik:PieSeries ShowLabels="True">
+                            <telerik:PieSeries.ValueBinding>
+                                <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
+                            </telerik:PieSeries.ValueBinding>
+                        </telerik:PieSeries>
+                    </telerik:RadPieChart>
                 </Grid>
             </PivotItem>
         </Pivot>

@@ -700,8 +700,20 @@
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\background2.png">
       <PackagePath>Images\background2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\circle.png">
+      <PackagePath>Images\circle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\circle2.png">
+      <PackagePath>Images\circle2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\circle3.png">
+      <PackagePath>Images\circle3.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\clockback.png">
       <PackagePath>Images\clockback.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\heart.png">
+      <PackagePath>Images\heart.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\whitecircle.png">
       <PackagePath>Images\whitecircle.png</PackagePath>
@@ -726,6 +738,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\amcharts\patterns\chalk\pattern6.jpg">
       <PackagePath>amcharts\patterns\chalk\pattern6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\bg3.jpg">
+      <PackagePath>Images\bg3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\blueBackground.jpg">
+      <PackagePath>Images\blueBackground.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\image.jpg">
       <PackagePath>Images\image.jpg</PackagePath>

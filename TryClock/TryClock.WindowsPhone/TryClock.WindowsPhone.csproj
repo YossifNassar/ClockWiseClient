@@ -294,7 +294,13 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Images\background.png" />
     <Content Include="Images\background2.png" />
+    <Content Include="Images\bg3.jpg" />
+    <Content Include="Images\blueBackground.jpg" />
+    <Content Include="Images\circle.png" />
+    <Content Include="Images\circle2.png" />
+    <Content Include="Images\circle3.png" />
     <Content Include="Images\clockback.png" />
+    <Content Include="Images\heart.png" />
     <Content Include="Images\image.jpg" />
     <Content Include="Images\whitecircle.png" />
   </ItemGroup>
