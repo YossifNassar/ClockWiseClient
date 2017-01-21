@@ -45,6 +45,8 @@ namespace TryClock
         public static int num;
         public static string res;
         public static double lastMovement = 0;
+        public static int lastHeartRate = 60;
+        private static bool isHeart = false;
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -89,33 +91,6 @@ namespace TryClock
             await App.connectionParams.chatWriter.StoreAsync();
         }
 
-     /*   public static string RecieveBTSignal()
-        {
-            char ch = '\0';
-            App.res = "";
-            int cnt = 1;
-            while (cnt > 0)
-            {
-                cnt--;
-                uint sizeFieldCount;
-                IAsyncOperation<uint> taskLoad = App.connectionParams.chatReader.LoadAsync(1);
-                taskLoad.AsTask().Wait();
-                sizeFieldCount = taskLoad.GetResults();
-                if (sizeFieldCount != 1)
-                {
-                    App.connectionParams.isConnectedToBluetooth = false;
-                    return String.Empty; // the socket was closed before reading.
-                }
-                byte b = App.connectionParams.chatReader.ReadByte();
-                ch = Convert.ToChar(b);
-                if (ch != '\r' && ch != '\n')
-                {
-                    App.res += Convert.ToString(b);
-                }          
-            }
-            return App.res;
-        } */
-
         public static void RecieveBTSignal()
         {
             App.res = "";
@@ -137,10 +112,27 @@ namespace TryClock
                     byte b = connectionParams.chatReader.ReadByte();
                     ch = Convert.ToChar(b);
 
+                    if(ch == 'H')
+                    {
+                        isHeart = true;
+                        continue;
+                    }
+                    if (ch == 'M')
+                    {
+                        isHeart = false;
+                        continue;
+                    }
+
                     if (ch == '\n')
                     {
-
-                        App.lastMovement = Convert.ToDouble(App.res);
+                        if (isHeart)
+                        {
+                            App.lastHeartRate = Convert.ToInt32(App.res);
+                        }
+                        else
+                        {
+                            App.lastMovement = Convert.ToDouble(App.res);
+                        }
                         App.res = "";
                     }
                     else

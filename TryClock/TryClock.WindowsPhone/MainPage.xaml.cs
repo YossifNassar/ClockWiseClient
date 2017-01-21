@@ -25,6 +25,7 @@ using Windows.Devices.Bluetooth.Rfcomm;
 using Windows.Devices.Enumeration;
 using Windows.UI.WebUI;
 using Telerik.UI.Xaml.Controls.Chart;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -39,9 +40,11 @@ namespace TryClock
         ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
         private const string BT_NAME = "HC-06";
         private static DispatcherTimer dispatcherTimer;
-        private static int MAX_X = 3600;
+        private static int MAX_X = 100;
+        private static int TICK = 1000;
+        private bool heartImageVisible = true;
         private static ObservableCollection<double> heartChartData = new ObservableCollection<double>() {};
-        private static ObservableCollection<double> movementChartData = new ObservableCollection<double>() { };
+        private static ObservableCollection<double> movementChartData = new ObservableCollection<double>() {};
 
         public MainPage()
         {
@@ -59,7 +62,7 @@ namespace TryClock
             //timer 
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += DispatcherTimer_Tick;
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 500);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, TICK);
             dispatcherTimer.Start();
         }
 
@@ -67,57 +70,41 @@ namespace TryClock
         {
             try
             {
+                heartImageVisible = heartImageVisible ? false : true;
                 Random rnd = new Random();
-                int heartRate = ((rnd.Next()) % 100);
-                heartTextBlock.Text = heartRate.ToString();
-                if (heartChartData.Count > 25)
+                int delta = rnd.Next(-3,3);
+                App.lastHeartRate = Analyser.AnalyseHeartRate(App.lastHeartRate + delta);
+                heartTextBlock.Text = App.lastHeartRate.ToString();
+                heartImage.Visibility = heartImageVisible ? Visibility.Visible : Visibility.Collapsed;
+                if (heartChartData.Count > MAX_X)
                 {
                     heartChartData.RemoveAt(0);
                 }
                 if (movementChartData.Count > MAX_X)
                 {
-                    movementChartData.Clear();
+                    movementChartData.RemoveAt(0);
                 }
-                heartChartData.Add(heartRate);
+                heartChartData.Add(App.lastHeartRate);
                 double btMovement = App.lastMovement;
+                if(App.lastMovement == 0)
+                {
+                    activityImage.Source = new BitmapImage(new Uri("ms-appx:///Images/inactive.png"));  
+                    activityText.Text = "InActive";
+                }
+                else
+                {
+                    activityImage.Source = new BitmapImage(new Uri("ms-appx:///Images/active.png"));
+                    activityText.Text = "Active";
+                }
 
                 bluetoothData.Text = "Last Movement Value: " + btMovement.ToString();
-                movementChartData.Add(analyse(btMovement));
+                movementChartData.Add(Analyser.AnalyseMovement(btMovement));
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
             }  
         }
-
-        private double analyse(double d)
-        {
-            double res = d;
-            if(res > 1)
-            {
-                return 1;
-            }
-            if(res < 0)
-            {
-                return 0;
-            }
-            App.lastMovement = 0;
-            return res;
-        }
-
-        public class Data
-        {
-            public double Value { get; set; }
-        }
-
-        public List<Data> CreateData()
-        {
-            List<Data> data = new List<Data>();
-            data.Add(new Data() { Value = 15.5 });
-            data.Add(new Data() { Value = 8.5 });
-            return data;
-        }
-
 
         private async void FillCombobox()
         {
@@ -136,7 +123,7 @@ namespace TryClock
         private void SetChartData()
         {
             this.radChartHeart.DataContext = heartChartData;
-            this.radChartHeartMini.DataContext = heartChartData;
+            //this.radChartHeartMini.DataContext = heartChartData;
             //this.radChartMovement.DataContext = movementChartData;
             ChartSeries barSeries = this.movementChartHeart.Series[0];
             barSeries.DataContext = movementChartData;

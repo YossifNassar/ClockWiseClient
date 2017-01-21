@@ -694,6 +694,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\active.png">
+      <PackagePath>Images\active.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\background.png">
       <PackagePath>Images\background.png</PackagePath>
     </AppxPackagedFile>
@@ -714,6 +717,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\heart.png">
       <PackagePath>Images\heart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\heart2.png">
+      <PackagePath>Images\heart2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\inactive.png">
+      <PackagePath>Images\inactive.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\whitecircle.png">
       <PackagePath>Images\whitecircle.png</PackagePath>
