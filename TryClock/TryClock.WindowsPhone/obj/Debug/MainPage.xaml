@@ -45,11 +45,10 @@
                         AlignmentX="Center">
                         </ImageBrush>
                     </Grid.Background>
+                    <TextBlock x:Name="bluetoothData" FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="bluetooth data" VerticalAlignment="Top" Margin="129,20,0,0"/>
                     <Image x:Name="image" HorizontalAlignment="Left" Height="71" Margin="243,192,0,0" VerticalAlignment="Top" Width="51" Source="Images/heart.png"/>
                     <TextBlock x:Name="heartTextBlock" FontSize="140" HorizontalAlignment="Left" Margin="76,164,0,0" TextWrapping="Wrap" Text="82" VerticalAlignment="Top"/>
                     <TextBlock x:Name="bmi" FontSize="30" HorizontalAlignment="Left" Margin="243,263,0,0" TextWrapping="Wrap" Text="bpm" VerticalAlignment="Top"/>
-                    <ListView Margin="10,-16,10,36" Name="lvUsers" ItemsSource="{Binding Metrics}">
-                    </ListView>
 
                     <telerik:RadCartesianChart x:Name="radChart2" Margin="117,289,110,117" Foreground="Azure">
                         <telerik:RadCartesianChart.HorizontalAxis>
@@ -68,7 +67,19 @@
             </PivotItem>
             <PivotItem Header="Stats">
                 <Grid>
-                    <telerik:RadCartesianChart x:Name="radChart" Margin="0,0,25,316" Foreground="Azure">
+                    <TextBlock FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Heart rate chart" VerticalAlignment="Top" Margin="120,-14,0,0"/>
+                    <telerik:RadCartesianChart x:Name="radChartHeart" Margin="10,12,15,304" Foreground="Azure">
+                        <telerik:RadCartesianChart.HorizontalAxis>
+                            <telerik:CategoricalAxis/>
+                        </telerik:RadCartesianChart.HorizontalAxis>
+                        <telerik:RadCartesianChart.VerticalAxis>
+                            <telerik:LinearAxis/>
+                        </telerik:RadCartesianChart.VerticalAxis>
+                        <telerik:LineSeries ItemsSource="{Binding}">
+                        </telerik:LineSeries>
+                    </telerik:RadCartesianChart>
+                    <TextBlock FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Movement chart" VerticalAlignment="Top" Margin="120,202,0,0"/>
+                    <telerik:RadCartesianChart x:Name="radChartMovement" Margin="10,236,15,80" Foreground="Azure">
                         <telerik:RadCartesianChart.HorizontalAxis>
                             <telerik:CategoricalAxis/>
                         </telerik:RadCartesianChart.HorizontalAxis>
@@ -79,13 +90,6 @@
                         </telerik:LineSeries>
                     </telerik:RadCartesianChart>
 
-                    <telerik:RadPieChart  x:Name="myChart" ClipToBounds="False" PaletteName="DefaultDark" Margin="0,195,25,53">
-                        <telerik:PieSeries ShowLabels="True">
-                            <telerik:PieSeries.ValueBinding>
-                                <telerik:PropertyNameDataPointBinding PropertyName="Value"/>
-                            </telerik:PieSeries.ValueBinding>
-                        </telerik:PieSeries>
-                    </telerik:RadPieChart>
                 </Grid>
             </PivotItem>
         </Pivot>

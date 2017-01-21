@@ -44,6 +44,8 @@ namespace TryClock
         public static bluetoothConnectionParams connectionParams;
         public static int num;
         public static string res;
+        public static string lastRecieved = "";
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -87,7 +89,7 @@ namespace TryClock
             await App.connectionParams.chatWriter.StoreAsync();
         }
 
-        public static string RecieveBTSignal()
+     /*   public static string RecieveBTSignal()
         {
             char ch = '\0';
             App.res = "";
@@ -112,7 +114,48 @@ namespace TryClock
                 }          
             }
             return App.res;
+        } */
+
+        public static void RecieveBTSignal()
+        {
+            App.res = "";
+            char ch;
+
+            while (true)
+            {
+                try
+                {
+                    uint sizeFieldCount;
+                    IAsyncOperation<uint> taskLoad = connectionParams.chatReader.LoadAsync(1);
+                    taskLoad.AsTask().Wait();
+                    sizeFieldCount = taskLoad.GetResults();
+                    if (sizeFieldCount != 1)
+                    {
+                        connectionParams.isConnectedToBluetooth = false;
+                        return; // the socket was closed before reading.
+                    }
+                    byte b = connectionParams.chatReader.ReadByte();
+                    ch = Convert.ToChar(b);
+
+                    if (ch == '\n')
+                    {
+
+                        App.lastRecieved = App.res;
+                        App.res = "";
+                    }
+                    else
+                    {
+                        App.res += ch;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Error in recieving data");
+                    Debug.WriteLine(ex.Message);
+                }
+            }
         }
+
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used when the application is launched to open a specific file, to display

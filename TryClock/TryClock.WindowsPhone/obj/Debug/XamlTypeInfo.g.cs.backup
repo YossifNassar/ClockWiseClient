@@ -148,7 +148,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[131];
+            _typeNameTable = new string[117];
             _typeNameTable[0] = "Telerik.UI.Xaml.Controls.Chart.RadCartesianChart";
             _typeNameTable[1] = "Telerik.UI.Xaml.Controls.Chart.RadChartBase";
             _typeNameTable[2] = "Telerik.UI.Xaml.Controls.Chart.PresenterBase";
@@ -217,71 +217,57 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             _typeNameTable[65] = "Telerik.UI.Xaml.Controls.Chart.ChartBehavior";
             _typeNameTable[66] = "Windows.Foundation.Size";
             _typeNameTable[67] = "Windows.Foundation.Point";
-            _typeNameTable[68] = "Telerik.UI.Xaml.Controls.Chart.RadPieChart";
-            _typeNameTable[69] = "Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection";
-            _typeNameTable[70] = "Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
-            _typeNameTable[71] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>";
-            _typeNameTable[72] = "Telerik.UI.Xaml.Controls.Chart.PieSeries";
-            _typeNameTable[73] = "Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>";
-            _typeNameTable[74] = "System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>";
-            _typeNameTable[75] = "Telerik.Charting.PieDataPoint";
-            _typeNameTable[76] = "Telerik.Charting.SingleValueDataPoint";
-            _typeNameTable[77] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[78] = "Windows.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[79] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[80] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>";
-            _typeNameTable[81] = "Telerik.Charting.AngleRange";
-            _typeNameTable[82] = "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding";
-            _typeNameTable[83] = "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis";
-            _typeNameTable[84] = "Telerik.Charting.AxisPlotMode";
-            _typeNameTable[85] = "Telerik.Charting.AxisHorizontalLocation";
-            _typeNameTable[86] = "Telerik.Charting.AxisVerticalLocation";
-            _typeNameTable[87] = "Telerik.Charting.IContentFormatter";
-            _typeNameTable[88] = "Telerik.Charting.AxisLastLabelVisibility";
-            _typeNameTable[89] = "Telerik.Charting.AxisLabelFitMode";
-            _typeNameTable[90] = "Telerik.UI.Xaml.Controls.Chart.LinearAxis";
-            _typeNameTable[91] = "Telerik.UI.Xaml.Controls.Chart.NumericalAxis";
-            _typeNameTable[92] = "Telerik.Charting.NumericalAxisRangeExtendDirection";
-            _typeNameTable[93] = "Telerik.Core.ValueRange`1<Double>";
-            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Chart.LineSeries";
-            _typeNameTable[95] = "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries";
-            _typeNameTable[96] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries";
-            _typeNameTable[97] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase";
-            _typeNameTable[98] = "Windows.UI.Xaml.Media.DoubleCollection";
-            _typeNameTable[99] = "Windows.UI.Xaml.Media.PenLineJoin";
-            _typeNameTable[100] = "Telerik.Charting.ChartSeriesCombineMode";
-            _typeNameTable[101] = "TryClock.MainPage";
-            _typeNameTable[102] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[103] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[104] = "System.Collections.ObjectModel.ObservableCollection`1<String>";
-            _typeNameTable[105] = "System.Collections.ObjectModel.Collection`1<String>";
-            _typeNameTable[106] = "TryClock.SetAlarmPage";
-            _typeNameTable[107] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
-            _typeNameTable[108] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
-            _typeNameTable[109] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
-            _typeNameTable[110] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
-            _typeNameTable[111] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
-            _typeNameTable[112] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
-            _typeNameTable[113] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[114] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
-            _typeNameTable[115] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
-            _typeNameTable[116] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
-            _typeNameTable[117] = "Windows.UI.Xaml.Media.FontFamily";
-            _typeNameTable[118] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
-            _typeNameTable[119] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[120] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
-            _typeNameTable[121] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory";
-            _typeNameTable[122] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup";
-            _typeNameTable[123] = "Telerik.Core.ViewModelBase";
-            _typeNameTable[124] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>";
-            _typeNameTable[125] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>";
-            _typeNameTable[126] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool";
-            _typeNameTable[127] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[128] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
-            _typeNameTable[129] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[130] = "Windows.UI.Xaml.Media.Animation.Storyboard";
+            _typeNameTable[68] = "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis";
+            _typeNameTable[69] = "Telerik.Charting.AxisPlotMode";
+            _typeNameTable[70] = "Telerik.Charting.AxisHorizontalLocation";
+            _typeNameTable[71] = "Telerik.Charting.AxisVerticalLocation";
+            _typeNameTable[72] = "Telerik.Charting.IContentFormatter";
+            _typeNameTable[73] = "Telerik.Charting.AxisLastLabelVisibility";
+            _typeNameTable[74] = "Telerik.Charting.AxisLabelFitMode";
+            _typeNameTable[75] = "Telerik.UI.Xaml.Controls.Chart.LinearAxis";
+            _typeNameTable[76] = "Telerik.UI.Xaml.Controls.Chart.NumericalAxis";
+            _typeNameTable[77] = "Telerik.Charting.NumericalAxisRangeExtendDirection";
+            _typeNameTable[78] = "Telerik.Core.ValueRange`1<Double>";
+            _typeNameTable[79] = "Telerik.UI.Xaml.Controls.Chart.LineSeries";
+            _typeNameTable[80] = "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries";
+            _typeNameTable[81] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries";
+            _typeNameTable[82] = "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase";
+            _typeNameTable[83] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[84] = "Windows.UI.Xaml.Media.DoubleCollection";
+            _typeNameTable[85] = "Windows.UI.Xaml.Media.PenLineJoin";
+            _typeNameTable[86] = "Telerik.Charting.ChartSeriesCombineMode";
+            _typeNameTable[87] = "TryClock.MainPage";
+            _typeNameTable[88] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[89] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[90] = "System.Collections.ObjectModel.ObservableCollection`1<String>";
+            _typeNameTable[91] = "System.Collections.ObjectModel.Collection`1<String>";
+            _typeNameTable[92] = "TryClock.SetAlarmPage";
+            _typeNameTable[93] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition";
+            _typeNameTable[94] = "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation";
+            _typeNameTable[95] = "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection";
+            _typeNameTable[96] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
+            _typeNameTable[97] = "Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition";
+            _typeNameTable[98] = "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase";
+            _typeNameTable[99] = "Windows.UI.Xaml.Controls.Orientation";
+            _typeNameTable[100] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition";
+            _typeNameTable[101] = "Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition";
+            _typeNameTable[102] = "Telerik.UI.Xaml.Controls.Input.HighlightStyle";
+            _typeNameTable[103] = "Windows.UI.Xaml.Media.FontFamily";
+            _typeNameTable[104] = "Telerik.UI.Xaml.Controls.Input.FontWeightName";
+            _typeNameTable[105] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[106] = "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle";
+            _typeNameTable[107] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory";
+            _typeNameTable[108] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup";
+            _typeNameTable[109] = "Telerik.Core.ViewModelBase";
+            _typeNameTable[110] = "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>";
+            _typeNameTable[111] = "System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>";
+            _typeNameTable[112] = "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool";
+            _typeNameTable[113] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[114] = "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter";
+            _typeNameTable[115] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[116] = "Windows.UI.Xaml.Media.Animation.Storyboard";
 
-            _typeTable = new global::System.Type[131];
+            _typeTable = new global::System.Type[117];
             _typeTable[0] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadCartesianChart);
             _typeTable[1] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadChartBase);
             _typeTable[2] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterBase);
@@ -350,69 +336,55 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             _typeTable[65] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior);
             _typeTable[66] = typeof(global::Windows.Foundation.Size);
             _typeTable[67] = typeof(global::Windows.Foundation.Point);
-            _typeTable[68] = typeof(global::Telerik.UI.Xaml.Controls.Chart.RadPieChart);
-            _typeTable[69] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection);
-            _typeTable[70] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PresenterCollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
-            _typeTable[71] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>);
-            _typeTable[72] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PieSeries);
-            _typeTable[73] = typeof(global::Telerik.Core.ElementCollection<global::Telerik.Charting.PieDataPoint>);
-            _typeTable[74] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>);
-            _typeTable[75] = typeof(global::Telerik.Charting.PieDataPoint);
-            _typeTable[76] = typeof(global::Telerik.Charting.SingleValueDataPoint);
-            _typeTable[77] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[78] = typeof(global::Windows.UI.Xaml.Controls.StyleSelector);
-            _typeTable[79] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>);
-            _typeTable[80] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>);
-            _typeTable[81] = typeof(global::Telerik.Charting.AngleRange);
-            _typeTable[82] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding);
-            _typeTable[83] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis);
-            _typeTable[84] = typeof(global::Telerik.Charting.AxisPlotMode);
-            _typeTable[85] = typeof(global::Telerik.Charting.AxisHorizontalLocation);
-            _typeTable[86] = typeof(global::Telerik.Charting.AxisVerticalLocation);
-            _typeTable[87] = typeof(global::Telerik.Charting.IContentFormatter);
-            _typeTable[88] = typeof(global::Telerik.Charting.AxisLastLabelVisibility);
-            _typeTable[89] = typeof(global::Telerik.Charting.AxisLabelFitMode);
-            _typeTable[90] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LinearAxis);
-            _typeTable[91] = typeof(global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis);
-            _typeTable[92] = typeof(global::Telerik.Charting.NumericalAxisRangeExtendDirection);
-            _typeTable[93] = typeof(global::Telerik.Core.ValueRange<global::System.Double>);
-            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LineSeries);
-            _typeTable[95] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries);
-            _typeTable[96] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries);
-            _typeTable[97] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase);
-            _typeTable[98] = typeof(global::Windows.UI.Xaml.Media.DoubleCollection);
-            _typeTable[99] = typeof(global::Windows.UI.Xaml.Media.PenLineJoin);
-            _typeTable[100] = typeof(global::Telerik.Charting.ChartSeriesCombineMode);
-            _typeTable[101] = typeof(global::TryClock.MainPage);
-            _typeTable[102] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[103] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[104] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.String>);
-            _typeTable[105] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
-            _typeTable[106] = typeof(global::TryClock.SetAlarmPage);
-            _typeTable[107] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
-            _typeTable[108] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
-            _typeTable[109] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
-            _typeTable[110] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
-            _typeTable[111] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
-            _typeTable[112] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
-            _typeTable[113] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[114] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
-            _typeTable[115] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
-            _typeTable[116] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
-            _typeTable[117] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
-            _typeTable[118] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
-            _typeTable[119] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[120] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
-            _typeTable[121] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory);
-            _typeTable[122] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup);
-            _typeTable[123] = typeof(global::Telerik.Core.ViewModelBase);
-            _typeTable[124] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>);
-            _typeTable[125] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>);
-            _typeTable[126] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool);
-            _typeTable[127] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[128] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
-            _typeTable[129] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[130] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
+            _typeTable[68] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis);
+            _typeTable[69] = typeof(global::Telerik.Charting.AxisPlotMode);
+            _typeTable[70] = typeof(global::Telerik.Charting.AxisHorizontalLocation);
+            _typeTable[71] = typeof(global::Telerik.Charting.AxisVerticalLocation);
+            _typeTable[72] = typeof(global::Telerik.Charting.IContentFormatter);
+            _typeTable[73] = typeof(global::Telerik.Charting.AxisLastLabelVisibility);
+            _typeTable[74] = typeof(global::Telerik.Charting.AxisLabelFitMode);
+            _typeTable[75] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LinearAxis);
+            _typeTable[76] = typeof(global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis);
+            _typeTable[77] = typeof(global::Telerik.Charting.NumericalAxisRangeExtendDirection);
+            _typeTable[78] = typeof(global::Telerik.Core.ValueRange<global::System.Double>);
+            _typeTable[79] = typeof(global::Telerik.UI.Xaml.Controls.Chart.LineSeries);
+            _typeTable[80] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries);
+            _typeTable[81] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries);
+            _typeTable[82] = typeof(global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase);
+            _typeTable[83] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[84] = typeof(global::Windows.UI.Xaml.Media.DoubleCollection);
+            _typeTable[85] = typeof(global::Windows.UI.Xaml.Media.PenLineJoin);
+            _typeTable[86] = typeof(global::Telerik.Charting.ChartSeriesCombineMode);
+            _typeTable[87] = typeof(global::TryClock.MainPage);
+            _typeTable[88] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[89] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[90] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.String>);
+            _typeTable[91] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
+            _typeTable[92] = typeof(global::TryClock.SetAlarmPage);
+            _typeTable[93] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition);
+            _typeTable[94] = typeof(global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation);
+            _typeTable[95] = typeof(global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection);
+            _typeTable[96] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
+            _typeTable[97] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition);
+            _typeTable[98] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase);
+            _typeTable[99] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
+            _typeTable[100] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition);
+            _typeTable[101] = typeof(global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition);
+            _typeTable[102] = typeof(global::Telerik.UI.Xaml.Controls.Input.HighlightStyle);
+            _typeTable[103] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
+            _typeTable[104] = typeof(global::Telerik.UI.Xaml.Controls.Input.FontWeightName);
+            _typeTable[105] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[106] = typeof(global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle);
+            _typeTable[107] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory);
+            _typeTable[108] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup);
+            _typeTable[109] = typeof(global::Telerik.Core.ViewModelBase);
+            _typeTable[110] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>);
+            _typeTable[111] = typeof(global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>);
+            _typeTable[112] = typeof(global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool);
+            _typeTable[113] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[114] = typeof(global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter);
+            _typeTable[115] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[116] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -462,34 +434,26 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
         private object Activate_60_ChartSeriesProvider() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartSeriesProvider(); }
         private object Activate_61_ChartPalette() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartPalette(); }
         private object Activate_64_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior>(); }
-        private object Activate_68_RadPieChart() { return new global::Telerik.UI.Xaml.Controls.Chart.RadPieChart(); }
-        private object Activate_71_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>(); }
-        private object Activate_72_PieSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.PieSeries(); }
-        private object Activate_74_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.Charting.PieDataPoint>(); }
-        private object Activate_75_PieDataPoint() { return new global::Telerik.Charting.PieDataPoint(); }
-        private object Activate_79_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_80_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Style>(); }
-        private object Activate_82_PropertyNameDataPointBinding() { return new global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding(); }
-        private object Activate_83_CategoricalAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis(); }
-        private object Activate_90_LinearAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.LinearAxis(); }
-        private object Activate_94_LineSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.LineSeries(); }
-        private object Activate_101_MainPage() { return new global::TryClock.MainPage(); }
-        private object Activate_104_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
-        private object Activate_105_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
-        private object Activate_106_SetAlarmPage() { return new global::TryClock.SetAlarmPage(); }
-        private object Activate_107_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
-        private object Activate_109_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
-        private object Activate_110_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
-        private object Activate_111_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
-        private object Activate_114_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
-        private object Activate_115_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
-        private object Activate_116_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
-        private object Activate_120_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
-        private object Activate_121_ImageEditorToolFactory() { return new global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory(); }
-        private object Activate_122_ImageEditorToolGroup() { return new global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup(); }
-        private object Activate_124_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>(); }
-        private object Activate_125_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>(); }
-        private object Activate_128_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
+        private object Activate_68_CategoricalAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis(); }
+        private object Activate_75_LinearAxis() { return new global::Telerik.UI.Xaml.Controls.Chart.LinearAxis(); }
+        private object Activate_79_LineSeries() { return new global::Telerik.UI.Xaml.Controls.Chart.LineSeries(); }
+        private object Activate_87_MainPage() { return new global::TryClock.MainPage(); }
+        private object Activate_90_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
+        private object Activate_91_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
+        private object Activate_92_SetAlarmPage() { return new global::TryClock.SetAlarmPage(); }
+        private object Activate_93_ChartAnnotationLabelDefinition() { return new global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition(); }
+        private object Activate_95_PaletteEntryCollection() { return new global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection(); }
+        private object Activate_96_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
+        private object Activate_97_AngledHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition(); }
+        private object Activate_100_FlatLooseHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition(); }
+        private object Activate_101_FlatTightHexLayoutDefinition() { return new global::Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition(); }
+        private object Activate_102_HighlightStyle() { return new global::Telerik.UI.Xaml.Controls.Input.HighlightStyle(); }
+        private object Activate_106_CalendarCellStyle() { return new global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle(); }
+        private object Activate_107_ImageEditorToolFactory() { return new global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory(); }
+        private object Activate_108_ImageEditorToolGroup() { return new global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup(); }
+        private object Activate_110_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>(); }
+        private object Activate_111_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>(); }
+        private object Activate_114_BusyIndicatorAnimationAdapter() { return new global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter(); }
         private void VectorAdd_5_CartesianSeriesCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.CartesianSeries>)instance;
@@ -598,73 +562,31 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             var newItem = (global::Telerik.UI.Xaml.Controls.Chart.ChartBehavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_69_PieSeriesCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_70_PresenterCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_71_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Chart.PieSeries>)instance;
-            var newItem = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_73_ElementCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.PieDataPoint>)instance;
-            var newItem = (global::Telerik.Charting.PieDataPoint)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_74_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Telerik.Charting.PieDataPoint>)instance;
-            var newItem = (global::Telerik.Charting.PieDataPoint)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_79_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
-            var newItem = (global::Windows.UI.Xaml.Style)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_80_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Style>)instance;
-            var newItem = (global::Windows.UI.Xaml.Style)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_104_ObservableCollection(object instance, object item)
+        private void VectorAdd_90_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_105_Collection(object instance, object item)
+        private void VectorAdd_91_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_110_List(object instance, object item)
+        private void VectorAdd_96_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Brush>)instance;
             var newItem = (global::Windows.UI.Xaml.Media.Brush)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_124_ObservableCollection(object instance, object item)
+        private void VectorAdd_110_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_125_Collection(object instance, object item)
+        private void VectorAdd_111_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>)instance;
             var newItem = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)item;
@@ -903,6 +825,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
 
             case 28:   //  Telerik.UI.Xaml.Controls.Chart.DataPointBinding
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
@@ -1156,121 +1079,9 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 68:   //  Telerik.UI.Xaml.Controls.Chart.RadPieChart
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadChartBase"));
-                userType.Activator = Activate_68_RadPieChart;
-                userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.RadPieChart.Series");
-                userType.AddMemberName("Series");
-                xamlType = userType;
-                break;
-
-            case 69:   //  Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>"));
-                userType.CollectionAdd = VectorAdd_69_PieSeriesCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 70:   //  Telerik.UI.Xaml.Controls.Chart.PresenterCollection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>"));
-                userType.CollectionAdd = VectorAdd_70_PresenterCollection;
-                xamlType = userType;
-                break;
-
-            case 71:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Chart.PieSeries>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_71_Collection;
-                userType.CollectionAdd = VectorAdd_71_Collection;
-                xamlType = userType;
-                break;
-
-            case 72:   //  Telerik.UI.Xaml.Controls.Chart.PieSeries
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartSeries"));
-                userType.Activator = Activate_72_PieSeries;
-                userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PieSeries.DataPoints");
-                userType.AddMemberName("DataPoints");
-                userType.AddMemberName("ValueBinding");
-                userType.AddMemberName("HighlightInnerRadiusFactor");
-                userType.AddMemberName("HighlightBrush");
-                userType.AddMemberName("DefaultSegmentStyle");
-                userType.AddMemberName("SelectedPointOffset");
-                userType.AddMemberName("LegendTitleBinding");
-                userType.AddMemberName("IsVisibleInLegendBinding");
-                userType.AddMemberName("SegmentStyleSelector");
-                userType.AddMemberName("RadiusFactor");
-                userType.AddMemberName("SegmentStyles");
-                userType.AddMemberName("AngleRange");
-                xamlType = userType;
-                break;
-
-            case 73:   //  Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>"));
-                userType.CollectionAdd = VectorAdd_73_ElementCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 74:   //  System.Collections.ObjectModel.Collection`1<Telerik.Charting.PieDataPoint>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_74_Collection;
-                userType.CollectionAdd = VectorAdd_74_Collection;
-                xamlType = userType;
-                break;
-
-            case 75:   //  Telerik.Charting.PieDataPoint
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.SingleValueDataPoint"));
-                userType.Activator = Activate_75_PieDataPoint;
-                userType.AddMemberName("Percent");
-                userType.AddMemberName("OffsetFromCenter");
-                userType.AddMemberName("StartAngle");
-                userType.AddMemberName("SweepAngle");
-                xamlType = userType;
-                break;
-
-            case 76:   //  Telerik.Charting.SingleValueDataPoint
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Charting.DataPoint"));
-                userType.AddMemberName("Value");
-                xamlType = userType;
-                break;
-
-            case 77:   //  Windows.UI.Xaml.Media.Brush
-                xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 78:   //  Windows.UI.Xaml.Controls.StyleSelector
-                xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 79:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>"));
-                userType.CollectionAdd = VectorAdd_79_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 80:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Style>
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_80_Collection;
-                userType.CollectionAdd = VectorAdd_80_Collection;
-                xamlType = userType;
-                break;
-
-            case 81:   //  Telerik.Charting.AngleRange
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 82:   //  Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding
-                userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.DataPointBinding"));
-                userType.Activator = Activate_82_PropertyNameDataPointBinding;
-                userType.AddMemberName("PropertyName");
-                xamlType = userType;
-                break;
-
-            case 83:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalAxis
+            case 68:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalAxis
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis"));
-                userType.Activator = Activate_83_CategoricalAxis;
+                userType.Activator = Activate_68_CategoricalAxis;
                 userType.AddMemberName("AutoGroup");
                 userType.AddMemberName("MajorTickInterval");
                 userType.AddMemberName("PlotMode");
@@ -1278,7 +1089,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 84:   //  Telerik.Charting.AxisPlotMode
+            case 69:   //  Telerik.Charting.AxisPlotMode
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("BetweenTicks", global::Telerik.Charting.AxisPlotMode.BetweenTicks);
                 userType.AddEnumValue("OnTicks", global::Telerik.Charting.AxisPlotMode.OnTicks);
@@ -1286,27 +1097,27 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 85:   //  Telerik.Charting.AxisHorizontalLocation
+            case 70:   //  Telerik.Charting.AxisHorizontalLocation
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.Charting.AxisHorizontalLocation.Left);
                 userType.AddEnumValue("Right", global::Telerik.Charting.AxisHorizontalLocation.Right);
                 xamlType = userType;
                 break;
 
-            case 86:   //  Telerik.Charting.AxisVerticalLocation
+            case 71:   //  Telerik.Charting.AxisVerticalLocation
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Bottom", global::Telerik.Charting.AxisVerticalLocation.Bottom);
                 userType.AddEnumValue("Top", global::Telerik.Charting.AxisVerticalLocation.Top);
                 xamlType = userType;
                 break;
 
-            case 87:   //  Telerik.Charting.IContentFormatter
+            case 72:   //  Telerik.Charting.IContentFormatter
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 88:   //  Telerik.Charting.AxisLastLabelVisibility
+            case 73:   //  Telerik.Charting.AxisLastLabelVisibility
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Visible", global::Telerik.Charting.AxisLastLabelVisibility.Visible);
                 userType.AddEnumValue("Hidden", global::Telerik.Charting.AxisLastLabelVisibility.Hidden);
@@ -1314,7 +1125,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 89:   //  Telerik.Charting.AxisLabelFitMode
+            case 74:   //  Telerik.Charting.AxisLabelFitMode
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.AxisLabelFitMode.None);
                 userType.AddEnumValue("MultiLine", global::Telerik.Charting.AxisLabelFitMode.MultiLine);
@@ -1322,14 +1133,14 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 90:   //  Telerik.UI.Xaml.Controls.Chart.LinearAxis
+            case 75:   //  Telerik.UI.Xaml.Controls.Chart.LinearAxis
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis"));
-                userType.Activator = Activate_90_LinearAxis;
+                userType.Activator = Activate_75_LinearAxis;
                 userType.AddMemberName("MajorStep");
                 xamlType = userType;
                 break;
 
-            case 91:   //  Telerik.UI.Xaml.Controls.Chart.NumericalAxis
+            case 76:   //  Telerik.UI.Xaml.Controls.Chart.NumericalAxis
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis"));
                 userType.AddMemberName("Minimum");
                 userType.AddMemberName("Maximum");
@@ -1339,7 +1150,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 92:   //  Telerik.Charting.NumericalAxisRangeExtendDirection
+            case 77:   //  Telerik.Charting.NumericalAxisRangeExtendDirection
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.NumericalAxisRangeExtendDirection.None);
                 userType.AddEnumValue("Positive", global::Telerik.Charting.NumericalAxisRangeExtendDirection.Positive);
@@ -1348,20 +1159,20 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 93:   //  Telerik.Core.ValueRange`1<Double>
+            case 78:   //  Telerik.Core.ValueRange`1<Double>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 94:   //  Telerik.UI.Xaml.Controls.Chart.LineSeries
+            case 79:   //  Telerik.UI.Xaml.Controls.Chart.LineSeries
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries"));
-                userType.Activator = Activate_94_LineSeries;
+                userType.Activator = Activate_79_LineSeries;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 xamlType = userType;
                 break;
 
-            case 95:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries
+            case 80:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeries"));
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("Stroke");
@@ -1371,7 +1182,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 96:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeries
+            case 81:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeries
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase"));
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("CombineMode");
@@ -1379,7 +1190,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 97:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase
+            case 82:   //  Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianSeries"));
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints");
                 userType.AddMemberName("DataPoints");
@@ -1388,15 +1199,19 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 98:   //  Windows.UI.Xaml.Media.DoubleCollection
+            case 83:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 99:   //  Windows.UI.Xaml.Media.PenLineJoin
+            case 84:   //  Windows.UI.Xaml.Media.DoubleCollection
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 100:   //  Telerik.Charting.ChartSeriesCombineMode
+            case 85:   //  Windows.UI.Xaml.Media.PenLineJoin
+                xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 86:   //  Telerik.Charting.ChartSeriesCombineMode
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Telerik.Charting.ChartSeriesCombineMode.None);
                 userType.AddEnumValue("Cluster", global::Telerik.Charting.ChartSeriesCombineMode.Cluster);
@@ -1405,46 +1220,46 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 101:   //  TryClock.MainPage
+            case 87:   //  TryClock.MainPage
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_101_MainPage;
+                userType.Activator = Activate_87_MainPage;
                 userType.AddMemberName("Metrics");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 102:   //  Windows.UI.Xaml.Controls.Page
+            case 88:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 103:   //  Windows.UI.Xaml.Controls.UserControl
+            case 89:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 104:   //  System.Collections.ObjectModel.ObservableCollection`1<String>
+            case 90:   //  System.Collections.ObjectModel.ObservableCollection`1<String>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<String>"));
-                userType.CollectionAdd = VectorAdd_104_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_90_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 105:   //  System.Collections.ObjectModel.Collection`1<String>
+            case 91:   //  System.Collections.ObjectModel.Collection`1<String>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_105_Collection;
-                userType.CollectionAdd = VectorAdd_105_Collection;
+                userType.Activator = Activate_91_Collection;
+                userType.CollectionAdd = VectorAdd_91_Collection;
                 xamlType = userType;
                 break;
 
-            case 106:   //  TryClock.SetAlarmPage
+            case 92:   //  TryClock.SetAlarmPage
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_106_SetAlarmPage;
+                userType.Activator = Activate_92_SetAlarmPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 107:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
+            case 93:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_107_ChartAnnotationLabelDefinition;
+                userType.Activator = Activate_93_ChartAnnotationLabelDefinition;
                 userType.AddMemberName("Format");
                 userType.AddMemberName("Template");
                 userType.AddMemberName("DefaultVisualStyle");
@@ -1457,7 +1272,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 108:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
+            case 94:   //  Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Left);
                 userType.AddEnumValue("Top", global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation.Top);
@@ -1467,29 +1282,29 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 109:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
+            case 95:   //  Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_109_PaletteEntryCollection;
+                userType.Activator = Activate_95_PaletteEntryCollection;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.Brushes");
                 userType.AddMemberName("Brushes");
                 xamlType = userType;
                 break;
 
-            case 110:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
+            case 96:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_110_List;
+                userType.CollectionAdd = VectorAdd_96_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 111:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
+            case 97:   //  Telerik.UI.Xaml.Controls.Data.HexView.AngledHexLayoutDefinition
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_111_AngledHexLayoutDefinition;
+                userType.Activator = Activate_97_AngledHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 112:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
+            case 98:   //  Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("ItemLength");
@@ -1498,27 +1313,27 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 113:   //  Windows.UI.Xaml.Controls.Orientation
+            case 99:   //  Windows.UI.Xaml.Controls.Orientation
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 114:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
+            case 100:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatLooseHexLayoutDefinition
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_114_FlatLooseHexLayoutDefinition;
+                userType.Activator = Activate_100_FlatLooseHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 115:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
+            case 101:   //  Telerik.UI.Xaml.Controls.Data.HexView.FlatTightHexLayoutDefinition
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase"));
-                userType.Activator = Activate_115_FlatTightHexLayoutDefinition;
+                userType.Activator = Activate_101_FlatTightHexLayoutDefinition;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 116:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
+            case 102:   //  Telerik.UI.Xaml.Controls.Input.HighlightStyle
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_116_HighlightStyle;
+                userType.Activator = Activate_102_HighlightStyle;
                 userType.AddMemberName("FontFamily");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontStyle");
@@ -1528,11 +1343,11 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 117:   //  Windows.UI.Xaml.Media.FontFamily
+            case 103:   //  Windows.UI.Xaml.Media.FontFamily
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 118:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
+            case 104:   //  Telerik.UI.Xaml.Controls.Input.FontWeightName
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Black", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Black);
                 userType.AddEnumValue("Bold", global::Telerik.UI.Xaml.Controls.Input.FontWeightName.Bold);
@@ -1548,7 +1363,7 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 119:   //  Windows.UI.Text.FontStyle
+            case 105:   //  Windows.UI.Text.FontStyle
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -1556,27 +1371,27 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 120:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
+            case 106:   //  Telerik.UI.Xaml.Controls.Input.CalendarCellStyle
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_120_CalendarCellStyle;
+                userType.Activator = Activate_106_CalendarCellStyle;
                 userType.AddMemberName("ContentStyle");
                 userType.AddMemberName("DecorationStyle");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 121:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory
+            case 107:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_121_ImageEditorToolFactory;
+                userType.Activator = Activate_107_ImageEditorToolFactory;
                 userType.AddMemberName("RangeToolDefaultTemplate");
                 userType.AddMemberName("TextToolDefaultTemplate");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 122:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup
+            case 108:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.ViewModelBase"));
-                userType.Activator = Activate_122_ImageEditorToolGroup;
+                userType.Activator = Activate_108_ImageEditorToolGroup;
                 userType.SetContentPropertyName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup.Tools");
                 userType.AddMemberName("Tools");
                 userType.AddMemberName("Icon");
@@ -1586,26 +1401,26 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 123:   //  Telerik.Core.ViewModelBase
+            case 109:   //  Telerik.Core.ViewModelBase
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 124:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>
+            case 110:   //  System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>"));
-                userType.CollectionAdd = VectorAdd_124_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_110_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 125:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>
+            case 111:   //  System.Collections.ObjectModel.Collection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_125_Collection;
-                userType.CollectionAdd = VectorAdd_125_Collection;
+                userType.Activator = Activate_111_Collection;
+                userType.CollectionAdd = VectorAdd_111_Collection;
                 xamlType = userType;
                 break;
 
-            case 126:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool
+            case 112:   //  Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Telerik.Core.ViewModelBase"));
                 userType.AddMemberName("Name");
                 userType.AddMemberName("CollectionIndex");
@@ -1617,23 +1432,23 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 127:   //  Windows.UI.Xaml.Visibility
+            case 113:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 128:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
+            case 114:   //  Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter
                 userType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_128_BusyIndicatorAnimationAdapter;
+                userType.Activator = Activate_114_BusyIndicatorAnimationAdapter;
                 userType.AddMemberName("Animation");
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 129:   //  Windows.UI.Xaml.FrameworkElement
+            case 115:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 130:   //  Windows.UI.Xaml.Media.Animation.Storyboard
+            case 116:   //  Windows.UI.Xaml.Media.Animation.Storyboard
                 xamlType = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -2284,907 +2099,747 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
             var that = (global::Telerik.UI.Xaml.Controls.Chart.RadChartBase)instance;
             that.ScrollOffset = (global::Windows.Foundation.Point)Value;
         }
-        private object get_69_RadPieChart_Series(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.RadPieChart)instance;
-            return that.Series;
-        }
-        private object get_70_PieSeries_DataPoints(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.DataPoints;
-        }
-        private object get_71_PieDataPoint_Percent(object instance)
-        {
-            var that = (global::Telerik.Charting.PieDataPoint)instance;
-            return that.Percent;
-        }
-        private object get_72_PieDataPoint_OffsetFromCenter(object instance)
-        {
-            var that = (global::Telerik.Charting.PieDataPoint)instance;
-            return that.OffsetFromCenter;
-        }
-        private void set_72_PieDataPoint_OffsetFromCenter(object instance, object Value)
-        {
-            var that = (global::Telerik.Charting.PieDataPoint)instance;
-            that.OffsetFromCenter = (global::System.Double)Value;
-        }
-        private object get_73_PieDataPoint_StartAngle(object instance)
-        {
-            var that = (global::Telerik.Charting.PieDataPoint)instance;
-            return that.StartAngle;
-        }
-        private object get_74_PieDataPoint_SweepAngle(object instance)
-        {
-            var that = (global::Telerik.Charting.PieDataPoint)instance;
-            return that.SweepAngle;
-        }
-        private object get_75_SingleValueDataPoint_Value(object instance)
-        {
-            var that = (global::Telerik.Charting.SingleValueDataPoint)instance;
-            return that.Value;
-        }
-        private void set_75_SingleValueDataPoint_Value(object instance, object Value)
-        {
-            var that = (global::Telerik.Charting.SingleValueDataPoint)instance;
-            that.Value = (global::System.Double)Value;
-        }
-        private object get_76_PieSeries_ValueBinding(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.ValueBinding;
-        }
-        private void set_76_PieSeries_ValueBinding(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.ValueBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
-        }
-        private object get_77_PieSeries_HighlightInnerRadiusFactor(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.HighlightInnerRadiusFactor;
-        }
-        private void set_77_PieSeries_HighlightInnerRadiusFactor(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.HighlightInnerRadiusFactor = (global::System.Double)Value;
-        }
-        private object get_78_PieSeries_HighlightBrush(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.HighlightBrush;
-        }
-        private void set_78_PieSeries_HighlightBrush(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.HighlightBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_79_PieSeries_DefaultSegmentStyle(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.DefaultSegmentStyle;
-        }
-        private void set_79_PieSeries_DefaultSegmentStyle(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.DefaultSegmentStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_80_PieSeries_SelectedPointOffset(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.SelectedPointOffset;
-        }
-        private void set_80_PieSeries_SelectedPointOffset(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.SelectedPointOffset = (global::System.Double)Value;
-        }
-        private object get_81_PieSeries_LegendTitleBinding(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.LegendTitleBinding;
-        }
-        private void set_81_PieSeries_LegendTitleBinding(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.LegendTitleBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
-        }
-        private object get_82_PieSeries_IsVisibleInLegendBinding(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.IsVisibleInLegendBinding;
-        }
-        private void set_82_PieSeries_IsVisibleInLegendBinding(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.IsVisibleInLegendBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
-        }
-        private object get_83_PieSeries_SegmentStyleSelector(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.SegmentStyleSelector;
-        }
-        private void set_83_PieSeries_SegmentStyleSelector(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.SegmentStyleSelector = (global::Windows.UI.Xaml.Controls.StyleSelector)Value;
-        }
-        private object get_84_PieSeries_RadiusFactor(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.RadiusFactor;
-        }
-        private void set_84_PieSeries_RadiusFactor(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.RadiusFactor = (global::System.Double)Value;
-        }
-        private object get_85_PieSeries_SegmentStyles(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.SegmentStyles;
-        }
-        private object get_86_PieSeries_AngleRange(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            return that.AngleRange;
-        }
-        private void set_86_PieSeries_AngleRange(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PieSeries)instance;
-            that.AngleRange = (global::Telerik.Charting.AngleRange)Value;
-        }
-        private object get_87_PropertyNameDataPointBinding_PropertyName(object instance)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding)instance;
-            return that.PropertyName;
-        }
-        private void set_87_PropertyNameDataPointBinding_PropertyName(object instance, object Value)
-        {
-            var that = (global::Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding)instance;
-            that.PropertyName = (global::System.String)Value;
-        }
-        private object get_88_CategoricalAxis_AutoGroup(object instance)
+        private object get_69_CategoricalAxis_AutoGroup(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             return that.AutoGroup;
         }
-        private void set_88_CategoricalAxis_AutoGroup(object instance, object Value)
+        private void set_69_CategoricalAxis_AutoGroup(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             that.AutoGroup = (global::System.Boolean)Value;
         }
-        private object get_89_CategoricalAxis_MajorTickInterval(object instance)
+        private object get_70_CategoricalAxis_MajorTickInterval(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             return that.MajorTickInterval;
         }
-        private void set_89_CategoricalAxis_MajorTickInterval(object instance, object Value)
+        private void set_70_CategoricalAxis_MajorTickInterval(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             that.MajorTickInterval = (global::System.Int32)Value;
         }
-        private object get_90_CategoricalAxis_PlotMode(object instance)
+        private object get_71_CategoricalAxis_PlotMode(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             return that.PlotMode;
         }
-        private void set_90_CategoricalAxis_PlotMode(object instance, object Value)
+        private void set_71_CategoricalAxis_PlotMode(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             that.PlotMode = (global::Telerik.Charting.AxisPlotMode)Value;
         }
-        private object get_91_CategoricalAxis_GapLength(object instance)
+        private object get_72_CategoricalAxis_GapLength(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             return that.GapLength;
         }
-        private void set_91_CategoricalAxis_GapLength(object instance, object Value)
+        private void set_72_CategoricalAxis_GapLength(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalAxis)instance;
             that.GapLength = (global::System.Double)Value;
         }
-        private object get_92_CartesianAxis_HorizontalLocation(object instance)
+        private object get_73_CartesianAxis_HorizontalLocation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis)instance;
             return that.HorizontalLocation;
         }
-        private void set_92_CartesianAxis_HorizontalLocation(object instance, object Value)
+        private void set_73_CartesianAxis_HorizontalLocation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis)instance;
             that.HorizontalLocation = (global::Telerik.Charting.AxisHorizontalLocation)Value;
         }
-        private object get_93_CartesianAxis_VerticalLocation(object instance)
+        private object get_74_CartesianAxis_VerticalLocation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis)instance;
             return that.VerticalLocation;
         }
-        private void set_93_CartesianAxis_VerticalLocation(object instance, object Value)
+        private void set_74_CartesianAxis_VerticalLocation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CartesianAxis)instance;
             that.VerticalLocation = (global::Telerik.Charting.AxisVerticalLocation)Value;
         }
-        private object get_94_LineAxis_IsInverse(object instance)
+        private object get_75_LineAxis_IsInverse(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.LineAxis)instance;
             return that.IsInverse;
         }
-        private void set_94_LineAxis_IsInverse(object instance, object Value)
+        private void set_75_LineAxis_IsInverse(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.LineAxis)instance;
             that.IsInverse = (global::System.Boolean)Value;
         }
-        private object get_95_Axis_LabelFormatter(object instance)
+        private object get_76_Axis_LabelFormatter(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelFormatter;
         }
-        private void set_95_Axis_LabelFormatter(object instance, object Value)
+        private void set_76_Axis_LabelFormatter(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelFormatter = (global::Telerik.Charting.IContentFormatter)Value;
         }
-        private object get_96_Axis_LabelRotationAngle(object instance)
+        private object get_77_Axis_LabelRotationAngle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelRotationAngle;
         }
-        private void set_96_Axis_LabelRotationAngle(object instance, object Value)
+        private void set_77_Axis_LabelRotationAngle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelRotationAngle = (global::System.Double)Value;
         }
-        private object get_97_Axis_LineStyle(object instance)
+        private object get_78_Axis_LineStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LineStyle;
         }
-        private void set_97_Axis_LineStyle(object instance, object Value)
+        private void set_78_Axis_LineStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LineStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_98_Axis_LastLabelVisibility(object instance)
+        private object get_79_Axis_LastLabelVisibility(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LastLabelVisibility;
         }
-        private void set_98_Axis_LastLabelVisibility(object instance, object Value)
+        private void set_79_Axis_LastLabelVisibility(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LastLabelVisibility = (global::Telerik.Charting.AxisLastLabelVisibility)Value;
         }
-        private object get_99_Axis_LabelFormat(object instance)
+        private object get_80_Axis_LabelFormat(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelFormat;
         }
-        private void set_99_Axis_LabelFormat(object instance, object Value)
+        private void set_80_Axis_LabelFormat(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelFormat = (global::System.String)Value;
         }
-        private object get_100_Axis_MajorTickOffset(object instance)
+        private object get_81_Axis_MajorTickOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.MajorTickOffset;
         }
-        private void set_100_Axis_MajorTickOffset(object instance, object Value)
+        private void set_81_Axis_MajorTickOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.MajorTickOffset = (global::System.Int32)Value;
         }
-        private object get_101_Axis_LabelOffset(object instance)
+        private object get_82_Axis_LabelOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelOffset;
         }
-        private void set_101_Axis_LabelOffset(object instance, object Value)
+        private void set_82_Axis_LabelOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelOffset = (global::System.Int32)Value;
         }
-        private object get_102_Axis_ShowLabels(object instance)
+        private object get_83_Axis_ShowLabels(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.ShowLabels;
         }
-        private void set_102_Axis_ShowLabels(object instance, object Value)
+        private void set_83_Axis_ShowLabels(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.ShowLabels = (global::System.Boolean)Value;
         }
-        private object get_103_Axis_LabelFitMode(object instance)
+        private object get_84_Axis_LabelFitMode(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelFitMode;
         }
-        private void set_103_Axis_LabelFitMode(object instance, object Value)
+        private void set_84_Axis_LabelFitMode(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelFitMode = (global::Telerik.Charting.AxisLabelFitMode)Value;
         }
-        private object get_104_Axis_Title(object instance)
+        private object get_85_Axis_Title(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.Title;
         }
-        private void set_104_Axis_Title(object instance, object Value)
+        private void set_85_Axis_Title(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.Title = (global::System.Object)Value;
         }
-        private object get_105_Axis_LabelTemplate(object instance)
+        private object get_86_Axis_LabelTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelTemplate;
         }
-        private void set_105_Axis_LabelTemplate(object instance, object Value)
+        private void set_86_Axis_LabelTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_106_Axis_LabelTemplateSelector(object instance)
+        private object get_87_Axis_LabelTemplateSelector(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelTemplateSelector;
         }
-        private void set_106_Axis_LabelTemplateSelector(object instance, object Value)
+        private void set_87_Axis_LabelTemplateSelector(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_107_Axis_LabelStyle(object instance)
+        private object get_88_Axis_LabelStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelStyle;
         }
-        private void set_107_Axis_LabelStyle(object instance, object Value)
+        private void set_88_Axis_LabelStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_108_Axis_TitleTemplate(object instance)
+        private object get_89_Axis_TitleTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.TitleTemplate;
         }
-        private void set_108_Axis_TitleTemplate(object instance, object Value)
+        private void set_89_Axis_TitleTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.TitleTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_109_Axis_MajorTickTemplate(object instance)
+        private object get_90_Axis_MajorTickTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.MajorTickTemplate;
         }
-        private void set_109_Axis_MajorTickTemplate(object instance, object Value)
+        private void set_90_Axis_MajorTickTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.MajorTickTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_110_Axis_MajorTickStyle(object instance)
+        private object get_91_Axis_MajorTickStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.MajorTickStyle;
         }
-        private void set_110_Axis_MajorTickStyle(object instance, object Value)
+        private void set_91_Axis_MajorTickStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.MajorTickStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_111_Axis_TickThickness(object instance)
+        private object get_92_Axis_TickThickness(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.TickThickness;
         }
-        private void set_111_Axis_TickThickness(object instance, object Value)
+        private void set_92_Axis_TickThickness(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.TickThickness = (global::System.Double)Value;
         }
-        private object get_112_Axis_LabelInterval(object instance)
+        private object get_93_Axis_LabelInterval(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             return that.LabelInterval;
         }
-        private void set_112_Axis_LabelInterval(object instance, object Value)
+        private void set_93_Axis_LabelInterval(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.Axis)instance;
             that.LabelInterval = (global::System.Int32)Value;
         }
-        private object get_113_LinearAxis_MajorStep(object instance)
+        private object get_94_LinearAxis_MajorStep(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.LinearAxis)instance;
             return that.MajorStep;
         }
-        private void set_113_LinearAxis_MajorStep(object instance, object Value)
+        private void set_94_LinearAxis_MajorStep(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.LinearAxis)instance;
             that.MajorStep = (global::System.Double)Value;
         }
-        private object get_114_NumericalAxis_Minimum(object instance)
+        private object get_95_NumericalAxis_Minimum(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             return that.Minimum;
         }
-        private void set_114_NumericalAxis_Minimum(object instance, object Value)
+        private void set_95_NumericalAxis_Minimum(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             that.Minimum = (global::System.Double)Value;
         }
-        private object get_115_NumericalAxis_Maximum(object instance)
+        private object get_96_NumericalAxis_Maximum(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             return that.Maximum;
         }
-        private void set_115_NumericalAxis_Maximum(object instance, object Value)
+        private void set_96_NumericalAxis_Maximum(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             that.Maximum = (global::System.Double)Value;
         }
-        private object get_116_NumericalAxis_RangeExtendDirection(object instance)
+        private object get_97_NumericalAxis_RangeExtendDirection(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             return that.RangeExtendDirection;
         }
-        private void set_116_NumericalAxis_RangeExtendDirection(object instance, object Value)
+        private void set_97_NumericalAxis_RangeExtendDirection(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             that.RangeExtendDirection = (global::Telerik.Charting.NumericalAxisRangeExtendDirection)Value;
         }
-        private object get_117_NumericalAxis_DesiredTickCount(object instance)
+        private object get_98_NumericalAxis_DesiredTickCount(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             return that.DesiredTickCount;
         }
-        private void set_117_NumericalAxis_DesiredTickCount(object instance, object Value)
+        private void set_98_NumericalAxis_DesiredTickCount(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             that.DesiredTickCount = (global::System.Int32)Value;
         }
-        private object get_118_NumericalAxis_ActualRange(object instance)
+        private object get_99_NumericalAxis_ActualRange(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.NumericalAxis)instance;
             return that.ActualRange;
         }
-        private object get_119_CategoricalSeriesBase_DataPoints(object instance)
+        private object get_100_CategoricalSeriesBase_DataPoints(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase)instance;
             return that.DataPoints;
         }
-        private object get_120_CategoricalStrokedSeries_Stroke(object instance)
+        private object get_101_CategoricalStrokedSeries_Stroke(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             return that.Stroke;
         }
-        private void set_120_CategoricalStrokedSeries_Stroke(object instance, object Value)
+        private void set_101_CategoricalStrokedSeries_Stroke(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_121_CategoricalStrokedSeries_StrokeThickness(object instance)
+        private object get_102_CategoricalStrokedSeries_StrokeThickness(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             return that.StrokeThickness;
         }
-        private void set_121_CategoricalStrokedSeries_StrokeThickness(object instance, object Value)
+        private void set_102_CategoricalStrokedSeries_StrokeThickness(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             that.StrokeThickness = (global::System.Double)Value;
         }
-        private object get_122_CategoricalStrokedSeries_StrokeDashArray(object instance)
+        private object get_103_CategoricalStrokedSeries_StrokeDashArray(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             return that.StrokeDashArray;
         }
-        private void set_122_CategoricalStrokedSeries_StrokeDashArray(object instance, object Value)
+        private void set_103_CategoricalStrokedSeries_StrokeDashArray(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
         }
-        private object get_123_CategoricalStrokedSeries_StrokeLineJoin(object instance)
+        private object get_104_CategoricalStrokedSeries_StrokeLineJoin(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             return that.StrokeLineJoin;
         }
-        private void set_123_CategoricalStrokedSeries_StrokeLineJoin(object instance, object Value)
+        private void set_104_CategoricalStrokedSeries_StrokeLineJoin(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries)instance;
             that.StrokeLineJoin = (global::Windows.UI.Xaml.Media.PenLineJoin)Value;
         }
-        private object get_124_CategoricalSeries_CombineMode(object instance)
+        private object get_105_CategoricalSeries_CombineMode(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries)instance;
             return that.CombineMode;
         }
-        private void set_124_CategoricalSeries_CombineMode(object instance, object Value)
+        private void set_105_CategoricalSeries_CombineMode(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries)instance;
             that.CombineMode = (global::Telerik.Charting.ChartSeriesCombineMode)Value;
         }
-        private object get_125_CategoricalSeries_StackGroupKey(object instance)
+        private object get_106_CategoricalSeries_StackGroupKey(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries)instance;
             return that.StackGroupKey;
         }
-        private void set_125_CategoricalSeries_StackGroupKey(object instance, object Value)
+        private void set_106_CategoricalSeries_StackGroupKey(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeries)instance;
             that.StackGroupKey = (global::System.Object)Value;
         }
-        private object get_126_CategoricalSeriesBase_ValueBinding(object instance)
+        private object get_107_CategoricalSeriesBase_ValueBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase)instance;
             return that.ValueBinding;
         }
-        private void set_126_CategoricalSeriesBase_ValueBinding(object instance, object Value)
+        private void set_107_CategoricalSeriesBase_ValueBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase)instance;
             that.ValueBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_127_CategoricalSeriesBase_CategoryBinding(object instance)
+        private object get_108_CategoricalSeriesBase_CategoryBinding(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase)instance;
             return that.CategoryBinding;
         }
-        private void set_127_CategoricalSeriesBase_CategoryBinding(object instance, object Value)
+        private void set_108_CategoricalSeriesBase_CategoryBinding(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase)instance;
             that.CategoryBinding = (global::Telerik.UI.Xaml.Controls.Chart.DataPointBinding)Value;
         }
-        private object get_128_MainPage_Metrics(object instance)
+        private object get_109_MainPage_Metrics(object instance)
         {
             var that = (global::TryClock.MainPage)instance;
             return that.Metrics;
         }
-        private object get_129_ChartAnnotationLabelDefinition_Format(object instance)
+        private object get_110_ChartAnnotationLabelDefinition_Format(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Format;
         }
-        private void set_129_ChartAnnotationLabelDefinition_Format(object instance, object Value)
+        private void set_110_ChartAnnotationLabelDefinition_Format(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Format = (global::System.String)Value;
         }
-        private object get_130_ChartAnnotationLabelDefinition_Template(object instance)
+        private object get_111_ChartAnnotationLabelDefinition_Template(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Template;
         }
-        private void set_130_ChartAnnotationLabelDefinition_Template(object instance, object Value)
+        private void set_111_ChartAnnotationLabelDefinition_Template(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Template = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_131_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance)
+        private object get_112_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.DefaultVisualStyle;
         }
-        private void set_131_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance, object Value)
+        private void set_112_ChartAnnotationLabelDefinition_DefaultVisualStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.DefaultVisualStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_132_ChartAnnotationLabelDefinition_Location(object instance)
+        private object get_113_ChartAnnotationLabelDefinition_Location(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.Location;
         }
-        private void set_132_ChartAnnotationLabelDefinition_Location(object instance, object Value)
+        private void set_113_ChartAnnotationLabelDefinition_Location(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.Location = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation)Value;
         }
-        private object get_133_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance)
+        private object get_114_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.HorizontalAlignment;
         }
-        private void set_133_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance, object Value)
+        private void set_114_ChartAnnotationLabelDefinition_HorizontalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.HorizontalAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
         }
-        private object get_134_ChartAnnotationLabelDefinition_VerticalAlignment(object instance)
+        private object get_115_ChartAnnotationLabelDefinition_VerticalAlignment(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.VerticalAlignment;
         }
-        private void set_134_ChartAnnotationLabelDefinition_VerticalAlignment(object instance, object Value)
+        private void set_115_ChartAnnotationLabelDefinition_VerticalAlignment(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.VerticalAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
         }
-        private object get_135_ChartAnnotationLabelDefinition_HorizontalOffset(object instance)
+        private object get_116_ChartAnnotationLabelDefinition_HorizontalOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.HorizontalOffset;
         }
-        private void set_135_ChartAnnotationLabelDefinition_HorizontalOffset(object instance, object Value)
+        private void set_116_ChartAnnotationLabelDefinition_HorizontalOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.HorizontalOffset = (global::System.Double)Value;
         }
-        private object get_136_ChartAnnotationLabelDefinition_VerticalOffset(object instance)
+        private object get_117_ChartAnnotationLabelDefinition_VerticalOffset(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             return that.VerticalOffset;
         }
-        private void set_136_ChartAnnotationLabelDefinition_VerticalOffset(object instance, object Value)
+        private void set_117_ChartAnnotationLabelDefinition_VerticalOffset(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition)instance;
             that.VerticalOffset = (global::System.Double)Value;
         }
-        private object get_137_ChartPalette_Name(object instance)
+        private object get_118_ChartPalette_Name(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.Name;
         }
-        private void set_137_ChartPalette_Name(object instance, object Value)
+        private void set_118_ChartPalette_Name(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_138_ChartPalette_FillEntries(object instance)
+        private object get_119_ChartPalette_FillEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.FillEntries;
         }
-        private void set_138_ChartPalette_FillEntries(object instance, object Value)
+        private void set_119_ChartPalette_FillEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.FillEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_139_PaletteEntryCollection_Brushes(object instance)
+        private object get_120_PaletteEntryCollection_Brushes(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)instance;
             return that.Brushes;
         }
-        private object get_140_ChartPalette_SpecialFillEntries(object instance)
+        private object get_121_ChartPalette_SpecialFillEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.SpecialFillEntries;
         }
-        private void set_140_ChartPalette_SpecialFillEntries(object instance, object Value)
+        private void set_121_ChartPalette_SpecialFillEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.SpecialFillEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_141_ChartPalette_StrokeEntries(object instance)
+        private object get_122_ChartPalette_StrokeEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.StrokeEntries;
         }
-        private void set_141_ChartPalette_StrokeEntries(object instance, object Value)
+        private void set_122_ChartPalette_StrokeEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.StrokeEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_142_ChartPalette_SpecialStrokeEntries(object instance)
+        private object get_123_ChartPalette_SpecialStrokeEntries(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             return that.SpecialStrokeEntries;
         }
-        private void set_142_ChartPalette_SpecialStrokeEntries(object instance, object Value)
+        private void set_123_ChartPalette_SpecialStrokeEntries(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Chart.ChartPalette)instance;
             that.SpecialStrokeEntries = (global::Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection)Value;
         }
-        private object get_143_HexLayoutDefinitionBase_Orientation(object instance)
+        private object get_124_HexLayoutDefinitionBase_Orientation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.Orientation;
         }
-        private void set_143_HexLayoutDefinitionBase_Orientation(object instance, object Value)
+        private void set_124_HexLayoutDefinitionBase_Orientation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
         }
-        private object get_144_HexLayoutDefinitionBase_ItemLength(object instance)
+        private object get_125_HexLayoutDefinitionBase_ItemLength(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ItemLength;
         }
-        private void set_144_HexLayoutDefinitionBase_ItemLength(object instance, object Value)
+        private void set_125_HexLayoutDefinitionBase_ItemLength(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ItemLength = (global::System.Double)Value;
         }
-        private object get_145_HexLayoutDefinitionBase_ItemsSpacing(object instance)
+        private object get_126_HexLayoutDefinitionBase_ItemsSpacing(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ItemsSpacing;
         }
-        private void set_145_HexLayoutDefinitionBase_ItemsSpacing(object instance, object Value)
+        private void set_126_HexLayoutDefinitionBase_ItemsSpacing(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ItemsSpacing = (global::System.Double)Value;
         }
-        private object get_146_HexLayoutDefinitionBase_ViewPortExtension(object instance)
+        private object get_127_HexLayoutDefinitionBase_ViewPortExtension(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             return that.ViewPortExtension;
         }
-        private void set_146_HexLayoutDefinitionBase_ViewPortExtension(object instance, object Value)
+        private void set_127_HexLayoutDefinitionBase_ViewPortExtension(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase)instance;
             that.ViewPortExtension = (global::System.Double)Value;
         }
-        private object get_147_HighlightStyle_FontFamily(object instance)
+        private object get_128_HighlightStyle_FontFamily(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontFamily;
         }
-        private void set_147_HighlightStyle_FontFamily(object instance, object Value)
+        private void set_128_HighlightStyle_FontFamily(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_148_HighlightStyle_FontWeight(object instance)
+        private object get_129_HighlightStyle_FontWeight(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontWeight;
         }
-        private void set_148_HighlightStyle_FontWeight(object instance, object Value)
+        private void set_129_HighlightStyle_FontWeight(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontWeight = (global::Telerik.UI.Xaml.Controls.Input.FontWeightName)Value;
         }
-        private object get_149_HighlightStyle_FontStyle(object instance)
+        private object get_130_HighlightStyle_FontStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontStyle;
         }
-        private void set_149_HighlightStyle_FontStyle(object instance, object Value)
+        private void set_130_HighlightStyle_FontStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_150_HighlightStyle_Foreground(object instance)
+        private object get_131_HighlightStyle_Foreground(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.Foreground;
         }
-        private void set_150_HighlightStyle_Foreground(object instance, object Value)
+        private void set_131_HighlightStyle_Foreground(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_151_HighlightStyle_FontSize(object instance)
+        private object get_132_HighlightStyle_FontSize(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             return that.FontSize;
         }
-        private void set_151_HighlightStyle_FontSize(object instance, object Value)
+        private void set_132_HighlightStyle_FontSize(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.HighlightStyle)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_152_CalendarCellStyle_ContentStyle(object instance)
+        private object get_133_CalendarCellStyle_ContentStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             return that.ContentStyle;
         }
-        private void set_152_CalendarCellStyle_ContentStyle(object instance, object Value)
+        private void set_133_CalendarCellStyle_ContentStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             that.ContentStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_153_CalendarCellStyle_DecorationStyle(object instance)
+        private object get_134_CalendarCellStyle_DecorationStyle(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             return that.DecorationStyle;
         }
-        private void set_153_CalendarCellStyle_DecorationStyle(object instance, object Value)
+        private void set_134_CalendarCellStyle_DecorationStyle(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.CalendarCellStyle)instance;
             that.DecorationStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_154_ImageEditorToolFactory_RangeToolDefaultTemplate(object instance)
+        private object get_135_ImageEditorToolFactory_RangeToolDefaultTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory)instance;
             return that.RangeToolDefaultTemplate;
         }
-        private void set_154_ImageEditorToolFactory_RangeToolDefaultTemplate(object instance, object Value)
+        private void set_135_ImageEditorToolFactory_RangeToolDefaultTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory)instance;
             that.RangeToolDefaultTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_155_ImageEditorToolFactory_TextToolDefaultTemplate(object instance)
+        private object get_136_ImageEditorToolFactory_TextToolDefaultTemplate(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory)instance;
             return that.TextToolDefaultTemplate;
         }
-        private void set_155_ImageEditorToolFactory_TextToolDefaultTemplate(object instance, object Value)
+        private void set_136_ImageEditorToolFactory_TextToolDefaultTemplate(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory)instance;
             that.TextToolDefaultTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_156_ImageEditorToolGroup_Tools(object instance)
+        private object get_137_ImageEditorToolGroup_Tools(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             return that.Tools;
         }
-        private object get_157_ImageEditorTool_Name(object instance)
+        private object get_138_ImageEditorTool_Name(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.Name;
         }
-        private object get_158_ImageEditorTool_CollectionIndex(object instance)
+        private object get_139_ImageEditorTool_CollectionIndex(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.CollectionIndex;
         }
-        private object get_159_ImageEditorTool_Icon(object instance)
+        private object get_140_ImageEditorTool_Icon(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.Icon;
         }
-        private object get_160_ImageEditorTool_IsWorking(object instance)
+        private object get_141_ImageEditorTool_IsWorking(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.IsWorking;
         }
-        private object get_161_ImageEditorTool_SupportsComparison(object instance)
+        private object get_142_ImageEditorTool_SupportsComparison(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.SupportsComparison;
         }
-        private object get_162_ImageEditorTool_IsSelected(object instance)
+        private object get_143_ImageEditorTool_IsSelected(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.IsSelected;
         }
-        private void set_162_ImageEditorTool_IsSelected(object instance, object Value)
+        private void set_143_ImageEditorTool_IsSelected(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_163_ImageEditorTool_Visibility(object instance)
+        private object get_144_ImageEditorTool_Visibility(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool)instance;
             return that.Visibility;
         }
-        private object get_164_ImageEditorToolGroup_Icon(object instance)
+        private object get_145_ImageEditorToolGroup_Icon(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             return that.Icon;
         }
-        private void set_164_ImageEditorToolGroup_Icon(object instance, object Value)
+        private void set_145_ImageEditorToolGroup_Icon(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             that.Icon = (global::System.String)Value;
         }
-        private object get_165_ImageEditorToolGroup_Name(object instance)
+        private object get_146_ImageEditorToolGroup_Name(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             return that.Name;
         }
-        private void set_165_ImageEditorToolGroup_Name(object instance, object Value)
+        private void set_146_ImageEditorToolGroup_Name(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_166_ImageEditorToolGroup_IsSelected(object instance)
+        private object get_147_ImageEditorToolGroup_IsSelected(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             return that.IsSelected;
         }
-        private void set_166_ImageEditorToolGroup_IsSelected(object instance, object Value)
+        private void set_147_ImageEditorToolGroup_IsSelected(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_167_BusyIndicatorAnimationAdapter_Animation(object instance)
+        private object get_148_BusyIndicatorAnimationAdapter_Animation(object instance)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter)instance;
             return that.Animation;
         }
-        private void set_167_BusyIndicatorAnimationAdapter_Animation(object instance, object Value)
+        private void set_148_BusyIndicatorAnimationAdapter_Animation(object instance, object Value)
         {
             var that = (global::Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter)instance;
             that.Animation = (global::Windows.UI.Xaml.Media.Animation.Storyboard)Value;
@@ -3650,662 +3305,538 @@ namespace TryClock.TryClock_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_68_RadChartBase_ScrollOffset;
                 xamlMember.Setter = set_68_RadChartBase_ScrollOffset;
                 break;
-            case "Telerik.UI.Xaml.Controls.Chart.RadPieChart.Series":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.RadPieChart");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Series", "Telerik.UI.Xaml.Controls.Chart.PieSeriesCollection");
-                xamlMember.Getter = get_69_RadPieChart_Series;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.DataPoints":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DataPoints", "Telerik.Core.ElementCollection`1<Telerik.Charting.PieDataPoint>");
-                xamlMember.Getter = get_70_PieSeries_DataPoints;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.Charting.PieDataPoint.Percent":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Percent", "Double");
-                xamlMember.Getter = get_71_PieDataPoint_Percent;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.Charting.PieDataPoint.OffsetFromCenter":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "OffsetFromCenter", "Double");
-                xamlMember.Getter = get_72_PieDataPoint_OffsetFromCenter;
-                xamlMember.Setter = set_72_PieDataPoint_OffsetFromCenter;
-                break;
-            case "Telerik.Charting.PieDataPoint.StartAngle":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
-                xamlMember.Getter = get_73_PieDataPoint_StartAngle;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.Charting.PieDataPoint.SweepAngle":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.PieDataPoint");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SweepAngle", "Double");
-                xamlMember.Getter = get_74_PieDataPoint_SweepAngle;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.Charting.SingleValueDataPoint.Value":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.Charting.SingleValueDataPoint");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Value", "Double");
-                xamlMember.Getter = get_75_SingleValueDataPoint_Value;
-                xamlMember.Setter = set_75_SingleValueDataPoint_Value;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.ValueBinding":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ValueBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_PieSeries_ValueBinding;
-                xamlMember.Setter = set_76_PieSeries_ValueBinding;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.HighlightInnerRadiusFactor":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "HighlightInnerRadiusFactor", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_PieSeries_HighlightInnerRadiusFactor;
-                xamlMember.Setter = set_77_PieSeries_HighlightInnerRadiusFactor;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.HighlightBrush":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "HighlightBrush", "Windows.UI.Xaml.Media.Brush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_PieSeries_HighlightBrush;
-                xamlMember.Setter = set_78_PieSeries_HighlightBrush;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.DefaultSegmentStyle":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultSegmentStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_PieSeries_DefaultSegmentStyle;
-                xamlMember.Setter = set_79_PieSeries_DefaultSegmentStyle;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SelectedPointOffset":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SelectedPointOffset", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_PieSeries_SelectedPointOffset;
-                xamlMember.Setter = set_80_PieSeries_SelectedPointOffset;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.LegendTitleBinding":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LegendTitleBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_PieSeries_LegendTitleBinding;
-                xamlMember.Setter = set_81_PieSeries_LegendTitleBinding;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.IsVisibleInLegendBinding":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsVisibleInLegendBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_PieSeries_IsVisibleInLegendBinding;
-                xamlMember.Setter = set_82_PieSeries_IsVisibleInLegendBinding;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SegmentStyleSelector":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SegmentStyleSelector", "Windows.UI.Xaml.Controls.StyleSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_PieSeries_SegmentStyleSelector;
-                xamlMember.Setter = set_83_PieSeries_SegmentStyleSelector;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.RadiusFactor":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "RadiusFactor", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_PieSeries_RadiusFactor;
-                xamlMember.Setter = set_84_PieSeries_RadiusFactor;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.SegmentStyles":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SegmentStyles", "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Style>");
-                xamlMember.Getter = get_85_PieSeries_SegmentStyles;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PieSeries.AngleRange":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PieSeries");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "AngleRange", "Telerik.Charting.AngleRange");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_PieSeries_AngleRange;
-                xamlMember.Setter = set_86_PieSeries_AngleRange;
-                break;
-            case "Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding.PropertyName":
-                userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding");
-                xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "PropertyName", "String");
-                xamlMember.Getter = get_87_PropertyNameDataPointBinding_PropertyName;
-                xamlMember.Setter = set_87_PropertyNameDataPointBinding_PropertyName;
-                break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis.AutoGroup":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "AutoGroup", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_CategoricalAxis_AutoGroup;
-                xamlMember.Setter = set_88_CategoricalAxis_AutoGroup;
+                xamlMember.Getter = get_69_CategoricalAxis_AutoGroup;
+                xamlMember.Setter = set_69_CategoricalAxis_AutoGroup;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis.MajorTickInterval":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "MajorTickInterval", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_CategoricalAxis_MajorTickInterval;
-                xamlMember.Setter = set_89_CategoricalAxis_MajorTickInterval;
+                xamlMember.Getter = get_70_CategoricalAxis_MajorTickInterval;
+                xamlMember.Setter = set_70_CategoricalAxis_MajorTickInterval;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis.PlotMode":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "PlotMode", "Telerik.Charting.AxisPlotMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_CategoricalAxis_PlotMode;
-                xamlMember.Setter = set_90_CategoricalAxis_PlotMode;
+                xamlMember.Getter = get_71_CategoricalAxis_PlotMode;
+                xamlMember.Setter = set_71_CategoricalAxis_PlotMode;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalAxis.GapLength":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "GapLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_CategoricalAxis_GapLength;
-                xamlMember.Setter = set_91_CategoricalAxis_GapLength;
+                xamlMember.Getter = get_72_CategoricalAxis_GapLength;
+                xamlMember.Setter = set_72_CategoricalAxis_GapLength;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CartesianAxis.HorizontalLocation":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "HorizontalLocation", "Telerik.Charting.AxisHorizontalLocation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_CartesianAxis_HorizontalLocation;
-                xamlMember.Setter = set_92_CartesianAxis_HorizontalLocation;
+                xamlMember.Getter = get_73_CartesianAxis_HorizontalLocation;
+                xamlMember.Setter = set_73_CartesianAxis_HorizontalLocation;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CartesianAxis.VerticalLocation":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CartesianAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "VerticalLocation", "Telerik.Charting.AxisVerticalLocation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_CartesianAxis_VerticalLocation;
-                xamlMember.Setter = set_93_CartesianAxis_VerticalLocation;
+                xamlMember.Getter = get_74_CartesianAxis_VerticalLocation;
+                xamlMember.Setter = set_74_CartesianAxis_VerticalLocation;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.LineAxis.IsInverse":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.LineAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsInverse", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_LineAxis_IsInverse;
-                xamlMember.Setter = set_94_LineAxis_IsInverse;
+                xamlMember.Getter = get_75_LineAxis_IsInverse;
+                xamlMember.Setter = set_75_LineAxis_IsInverse;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelFormatter":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelFormatter", "Telerik.Charting.IContentFormatter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_Axis_LabelFormatter;
-                xamlMember.Setter = set_95_Axis_LabelFormatter;
+                xamlMember.Getter = get_76_Axis_LabelFormatter;
+                xamlMember.Setter = set_76_Axis_LabelFormatter;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelRotationAngle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelRotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_Axis_LabelRotationAngle;
-                xamlMember.Setter = set_96_Axis_LabelRotationAngle;
+                xamlMember.Getter = get_77_Axis_LabelRotationAngle;
+                xamlMember.Setter = set_77_Axis_LabelRotationAngle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LineStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_97_Axis_LineStyle;
-                xamlMember.Setter = set_97_Axis_LineStyle;
+                xamlMember.Getter = get_78_Axis_LineStyle;
+                xamlMember.Setter = set_78_Axis_LineStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LastLabelVisibility":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LastLabelVisibility", "Telerik.Charting.AxisLastLabelVisibility");
-                xamlMember.Getter = get_98_Axis_LastLabelVisibility;
-                xamlMember.Setter = set_98_Axis_LastLabelVisibility;
+                xamlMember.Getter = get_79_Axis_LastLabelVisibility;
+                xamlMember.Setter = set_79_Axis_LastLabelVisibility;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelFormat":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelFormat", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_99_Axis_LabelFormat;
-                xamlMember.Setter = set_99_Axis_LabelFormat;
+                xamlMember.Getter = get_80_Axis_LabelFormat;
+                xamlMember.Setter = set_80_Axis_LabelFormat;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.MajorTickOffset":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "MajorTickOffset", "Int32");
-                xamlMember.Getter = get_100_Axis_MajorTickOffset;
-                xamlMember.Setter = set_100_Axis_MajorTickOffset;
+                xamlMember.Getter = get_81_Axis_MajorTickOffset;
+                xamlMember.Setter = set_81_Axis_MajorTickOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelOffset":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelOffset", "Int32");
-                xamlMember.Getter = get_101_Axis_LabelOffset;
-                xamlMember.Setter = set_101_Axis_LabelOffset;
+                xamlMember.Getter = get_82_Axis_LabelOffset;
+                xamlMember.Setter = set_82_Axis_LabelOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.ShowLabels":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ShowLabels", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_Axis_ShowLabels;
-                xamlMember.Setter = set_102_Axis_ShowLabels;
+                xamlMember.Getter = get_83_Axis_ShowLabels;
+                xamlMember.Setter = set_83_Axis_ShowLabels;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelFitMode":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelFitMode", "Telerik.Charting.AxisLabelFitMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_Axis_LabelFitMode;
-                xamlMember.Setter = set_103_Axis_LabelFitMode;
+                xamlMember.Getter = get_84_Axis_LabelFitMode;
+                xamlMember.Setter = set_84_Axis_LabelFitMode;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.Title":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Title", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_Axis_Title;
-                xamlMember.Setter = set_104_Axis_Title;
+                xamlMember.Getter = get_85_Axis_Title;
+                xamlMember.Setter = set_85_Axis_Title;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelTemplate":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_Axis_LabelTemplate;
-                xamlMember.Setter = set_105_Axis_LabelTemplate;
+                xamlMember.Getter = get_86_Axis_LabelTemplate;
+                xamlMember.Setter = set_86_Axis_LabelTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelTemplateSelector":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_Axis_LabelTemplateSelector;
-                xamlMember.Setter = set_106_Axis_LabelTemplateSelector;
+                xamlMember.Getter = get_87_Axis_LabelTemplateSelector;
+                xamlMember.Setter = set_87_Axis_LabelTemplateSelector;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_Axis_LabelStyle;
-                xamlMember.Setter = set_107_Axis_LabelStyle;
+                xamlMember.Getter = get_88_Axis_LabelStyle;
+                xamlMember.Setter = set_88_Axis_LabelStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.TitleTemplate":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "TitleTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_Axis_TitleTemplate;
-                xamlMember.Setter = set_108_Axis_TitleTemplate;
+                xamlMember.Getter = get_89_Axis_TitleTemplate;
+                xamlMember.Setter = set_89_Axis_TitleTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.MajorTickTemplate":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "MajorTickTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_Axis_MajorTickTemplate;
-                xamlMember.Setter = set_109_Axis_MajorTickTemplate;
+                xamlMember.Getter = get_90_Axis_MajorTickTemplate;
+                xamlMember.Setter = set_90_Axis_MajorTickTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.MajorTickStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "MajorTickStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_Axis_MajorTickStyle;
-                xamlMember.Setter = set_110_Axis_MajorTickStyle;
+                xamlMember.Getter = get_91_Axis_MajorTickStyle;
+                xamlMember.Setter = set_91_Axis_MajorTickStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.TickThickness":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "TickThickness", "Double");
-                xamlMember.Getter = get_111_Axis_TickThickness;
-                xamlMember.Setter = set_111_Axis_TickThickness;
+                xamlMember.Getter = get_92_Axis_TickThickness;
+                xamlMember.Setter = set_92_Axis_TickThickness;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.Axis.LabelInterval":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.Axis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "LabelInterval", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_Axis_LabelInterval;
-                xamlMember.Setter = set_112_Axis_LabelInterval;
+                xamlMember.Getter = get_93_Axis_LabelInterval;
+                xamlMember.Setter = set_93_Axis_LabelInterval;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.LinearAxis.MajorStep":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.LinearAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "MajorStep", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_LinearAxis_MajorStep;
-                xamlMember.Setter = set_113_LinearAxis_MajorStep;
+                xamlMember.Getter = get_94_LinearAxis_MajorStep;
+                xamlMember.Setter = set_94_LinearAxis_MajorStep;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.NumericalAxis.Minimum":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_NumericalAxis_Minimum;
-                xamlMember.Setter = set_114_NumericalAxis_Minimum;
+                xamlMember.Getter = get_95_NumericalAxis_Minimum;
+                xamlMember.Setter = set_95_NumericalAxis_Minimum;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.NumericalAxis.Maximum":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_NumericalAxis_Maximum;
-                xamlMember.Setter = set_115_NumericalAxis_Maximum;
+                xamlMember.Getter = get_96_NumericalAxis_Maximum;
+                xamlMember.Setter = set_96_NumericalAxis_Maximum;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.NumericalAxis.RangeExtendDirection":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "RangeExtendDirection", "Telerik.Charting.NumericalAxisRangeExtendDirection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_NumericalAxis_RangeExtendDirection;
-                xamlMember.Setter = set_116_NumericalAxis_RangeExtendDirection;
+                xamlMember.Getter = get_97_NumericalAxis_RangeExtendDirection;
+                xamlMember.Setter = set_97_NumericalAxis_RangeExtendDirection;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.NumericalAxis.DesiredTickCount":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DesiredTickCount", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_NumericalAxis_DesiredTickCount;
-                xamlMember.Setter = set_117_NumericalAxis_DesiredTickCount;
+                xamlMember.Getter = get_98_NumericalAxis_DesiredTickCount;
+                xamlMember.Setter = set_98_NumericalAxis_DesiredTickCount;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.NumericalAxis.ActualRange":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.NumericalAxis");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ActualRange", "Telerik.Core.ValueRange`1<Double>");
-                xamlMember.Getter = get_118_NumericalAxis_ActualRange;
+                xamlMember.Getter = get_99_NumericalAxis_ActualRange;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.DataPoints":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DataPoints", "Telerik.Charting.DataPointCollection`1<Telerik.Charting.CategoricalDataPoint>");
-                xamlMember.Getter = get_119_CategoricalSeriesBase_DataPoints;
+                xamlMember.Getter = get_100_CategoricalSeriesBase_DataPoints;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries.Stroke":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_120_CategoricalStrokedSeries_Stroke;
-                xamlMember.Setter = set_120_CategoricalStrokedSeries_Stroke;
+                xamlMember.Getter = get_101_CategoricalStrokedSeries_Stroke;
+                xamlMember.Setter = set_101_CategoricalStrokedSeries_Stroke;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries.StrokeThickness":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_121_CategoricalStrokedSeries_StrokeThickness;
-                xamlMember.Setter = set_121_CategoricalStrokedSeries_StrokeThickness;
+                xamlMember.Getter = get_102_CategoricalStrokedSeries_StrokeThickness;
+                xamlMember.Setter = set_102_CategoricalStrokedSeries_StrokeThickness;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries.StrokeDashArray":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StrokeDashArray", "Windows.UI.Xaml.Media.DoubleCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_122_CategoricalStrokedSeries_StrokeDashArray;
-                xamlMember.Setter = set_122_CategoricalStrokedSeries_StrokeDashArray;
+                xamlMember.Getter = get_103_CategoricalStrokedSeries_StrokeDashArray;
+                xamlMember.Setter = set_103_CategoricalStrokedSeries_StrokeDashArray;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries.StrokeLineJoin":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalStrokedSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StrokeLineJoin", "Windows.UI.Xaml.Media.PenLineJoin");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_123_CategoricalStrokedSeries_StrokeLineJoin;
-                xamlMember.Setter = set_123_CategoricalStrokedSeries_StrokeLineJoin;
+                xamlMember.Getter = get_104_CategoricalStrokedSeries_StrokeLineJoin;
+                xamlMember.Setter = set_104_CategoricalStrokedSeries_StrokeLineJoin;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries.CombineMode":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "CombineMode", "Telerik.Charting.ChartSeriesCombineMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_124_CategoricalSeries_CombineMode;
-                xamlMember.Setter = set_124_CategoricalSeries_CombineMode;
+                xamlMember.Getter = get_105_CategoricalSeries_CombineMode;
+                xamlMember.Setter = set_105_CategoricalSeries_CombineMode;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalSeries.StackGroupKey":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeries");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StackGroupKey", "Object");
-                xamlMember.Getter = get_125_CategoricalSeries_StackGroupKey;
-                xamlMember.Setter = set_125_CategoricalSeries_StackGroupKey;
+                xamlMember.Getter = get_106_CategoricalSeries_StackGroupKey;
+                xamlMember.Setter = set_106_CategoricalSeries_StackGroupKey;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.ValueBinding":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ValueBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_CategoricalSeriesBase_ValueBinding;
-                xamlMember.Setter = set_126_CategoricalSeriesBase_ValueBinding;
+                xamlMember.Getter = get_107_CategoricalSeriesBase_ValueBinding;
+                xamlMember.Setter = set_107_CategoricalSeriesBase_ValueBinding;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase.CategoryBinding":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.CategoricalSeriesBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "CategoryBinding", "Telerik.UI.Xaml.Controls.Chart.DataPointBinding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_CategoricalSeriesBase_CategoryBinding;
-                xamlMember.Setter = set_127_CategoricalSeriesBase_CategoryBinding;
+                xamlMember.Getter = get_108_CategoricalSeriesBase_CategoryBinding;
+                xamlMember.Setter = set_108_CategoricalSeriesBase_CategoryBinding;
                 break;
             case "TryClock.MainPage.Metrics":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TryClock.MainPage");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Metrics", "System.Collections.ObjectModel.ObservableCollection`1<String>");
-                xamlMember.Getter = get_128_MainPage_Metrics;
+                xamlMember.Getter = get_109_MainPage_Metrics;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Format":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Format", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_ChartAnnotationLabelDefinition_Format;
-                xamlMember.Setter = set_129_ChartAnnotationLabelDefinition_Format;
+                xamlMember.Getter = get_110_ChartAnnotationLabelDefinition_Format;
+                xamlMember.Setter = set_110_ChartAnnotationLabelDefinition_Format;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Template":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Template", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_130_ChartAnnotationLabelDefinition_Template;
-                xamlMember.Setter = set_130_ChartAnnotationLabelDefinition_Template;
+                xamlMember.Getter = get_111_ChartAnnotationLabelDefinition_Template;
+                xamlMember.Setter = set_111_ChartAnnotationLabelDefinition_Template;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.DefaultVisualStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultVisualStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_131_ChartAnnotationLabelDefinition_DefaultVisualStyle;
-                xamlMember.Setter = set_131_ChartAnnotationLabelDefinition_DefaultVisualStyle;
+                xamlMember.Getter = get_112_ChartAnnotationLabelDefinition_DefaultVisualStyle;
+                xamlMember.Setter = set_112_ChartAnnotationLabelDefinition_DefaultVisualStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.Location":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Location", "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelLocation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_132_ChartAnnotationLabelDefinition_Location;
-                xamlMember.Setter = set_132_ChartAnnotationLabelDefinition_Location;
+                xamlMember.Getter = get_113_ChartAnnotationLabelDefinition_Location;
+                xamlMember.Setter = set_113_ChartAnnotationLabelDefinition_Location;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.HorizontalAlignment":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "HorizontalAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_133_ChartAnnotationLabelDefinition_HorizontalAlignment;
-                xamlMember.Setter = set_133_ChartAnnotationLabelDefinition_HorizontalAlignment;
+                xamlMember.Getter = get_114_ChartAnnotationLabelDefinition_HorizontalAlignment;
+                xamlMember.Setter = set_114_ChartAnnotationLabelDefinition_HorizontalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.VerticalAlignment":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "VerticalAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_134_ChartAnnotationLabelDefinition_VerticalAlignment;
-                xamlMember.Setter = set_134_ChartAnnotationLabelDefinition_VerticalAlignment;
+                xamlMember.Getter = get_115_ChartAnnotationLabelDefinition_VerticalAlignment;
+                xamlMember.Setter = set_115_ChartAnnotationLabelDefinition_VerticalAlignment;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.HorizontalOffset":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_135_ChartAnnotationLabelDefinition_HorizontalOffset;
-                xamlMember.Setter = set_135_ChartAnnotationLabelDefinition_HorizontalOffset;
+                xamlMember.Getter = get_116_ChartAnnotationLabelDefinition_HorizontalOffset;
+                xamlMember.Setter = set_116_ChartAnnotationLabelDefinition_HorizontalOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition.VerticalOffset":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartAnnotationLabelDefinition");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_136_ChartAnnotationLabelDefinition_VerticalOffset;
-                xamlMember.Setter = set_136_ChartAnnotationLabelDefinition_VerticalOffset;
+                xamlMember.Getter = get_117_ChartAnnotationLabelDefinition_VerticalOffset;
+                xamlMember.Setter = set_117_ChartAnnotationLabelDefinition_VerticalOffset;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.Name":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_137_ChartPalette_Name;
-                xamlMember.Setter = set_137_ChartPalette_Name;
+                xamlMember.Getter = get_118_ChartPalette_Name;
+                xamlMember.Setter = set_118_ChartPalette_Name;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.FillEntries":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "FillEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_138_ChartPalette_FillEntries;
-                xamlMember.Setter = set_138_ChartPalette_FillEntries;
+                xamlMember.Getter = get_119_ChartPalette_FillEntries;
+                xamlMember.Setter = set_119_ChartPalette_FillEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection.Brushes":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Brushes", "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>");
-                xamlMember.Getter = get_139_PaletteEntryCollection_Brushes;
+                xamlMember.Getter = get_120_PaletteEntryCollection_Brushes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.SpecialFillEntries":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SpecialFillEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_140_ChartPalette_SpecialFillEntries;
-                xamlMember.Setter = set_140_ChartPalette_SpecialFillEntries;
+                xamlMember.Getter = get_121_ChartPalette_SpecialFillEntries;
+                xamlMember.Setter = set_121_ChartPalette_SpecialFillEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.StrokeEntries":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "StrokeEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_141_ChartPalette_StrokeEntries;
-                xamlMember.Setter = set_141_ChartPalette_StrokeEntries;
+                xamlMember.Getter = get_122_ChartPalette_StrokeEntries;
+                xamlMember.Setter = set_122_ChartPalette_StrokeEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Chart.ChartPalette.SpecialStrokeEntries":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Chart.ChartPalette");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SpecialStrokeEntries", "Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection");
-                xamlMember.Getter = get_142_ChartPalette_SpecialStrokeEntries;
-                xamlMember.Setter = set_142_ChartPalette_SpecialStrokeEntries;
+                xamlMember.Getter = get_123_ChartPalette_SpecialStrokeEntries;
+                xamlMember.Setter = set_123_ChartPalette_SpecialStrokeEntries;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.Orientation":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_HexLayoutDefinitionBase_Orientation;
-                xamlMember.Setter = set_143_HexLayoutDefinitionBase_Orientation;
+                xamlMember.Getter = get_124_HexLayoutDefinitionBase_Orientation;
+                xamlMember.Setter = set_124_HexLayoutDefinitionBase_Orientation;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ItemLength":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ItemLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_144_HexLayoutDefinitionBase_ItemLength;
-                xamlMember.Setter = set_144_HexLayoutDefinitionBase_ItemLength;
+                xamlMember.Getter = get_125_HexLayoutDefinitionBase_ItemLength;
+                xamlMember.Setter = set_125_HexLayoutDefinitionBase_ItemLength;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ItemsSpacing":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ItemsSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_HexLayoutDefinitionBase_ItemsSpacing;
-                xamlMember.Setter = set_145_HexLayoutDefinitionBase_ItemsSpacing;
+                xamlMember.Getter = get_126_HexLayoutDefinitionBase_ItemsSpacing;
+                xamlMember.Setter = set_126_HexLayoutDefinitionBase_ItemsSpacing;
                 break;
             case "Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase.ViewPortExtension":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Data.HexView.HexLayoutDefinitionBase");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewPortExtension", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_146_HexLayoutDefinitionBase_ViewPortExtension;
-                xamlMember.Setter = set_146_HexLayoutDefinitionBase_ViewPortExtension;
+                xamlMember.Getter = get_127_HexLayoutDefinitionBase_ViewPortExtension;
+                xamlMember.Setter = set_127_HexLayoutDefinitionBase_ViewPortExtension;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontFamily":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_147_HighlightStyle_FontFamily;
-                xamlMember.Setter = set_147_HighlightStyle_FontFamily;
+                xamlMember.Getter = get_128_HighlightStyle_FontFamily;
+                xamlMember.Setter = set_128_HighlightStyle_FontFamily;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontWeight":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "FontWeight", "Telerik.UI.Xaml.Controls.Input.FontWeightName");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_148_HighlightStyle_FontWeight;
-                xamlMember.Setter = set_148_HighlightStyle_FontWeight;
+                xamlMember.Getter = get_129_HighlightStyle_FontWeight;
+                xamlMember.Setter = set_129_HighlightStyle_FontWeight;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_149_HighlightStyle_FontStyle;
-                xamlMember.Setter = set_149_HighlightStyle_FontStyle;
+                xamlMember.Getter = get_130_HighlightStyle_FontStyle;
+                xamlMember.Setter = set_130_HighlightStyle_FontStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.Foreground":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_150_HighlightStyle_Foreground;
-                xamlMember.Setter = set_150_HighlightStyle_Foreground;
+                xamlMember.Getter = get_131_HighlightStyle_Foreground;
+                xamlMember.Setter = set_131_HighlightStyle_Foreground;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.HighlightStyle.FontSize":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.HighlightStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_HighlightStyle_FontSize;
-                xamlMember.Setter = set_151_HighlightStyle_FontSize;
+                xamlMember.Getter = get_132_HighlightStyle_FontSize;
+                xamlMember.Setter = set_132_HighlightStyle_FontSize;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle.ContentStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.CalendarCellStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "ContentStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_CalendarCellStyle_ContentStyle;
-                xamlMember.Setter = set_152_CalendarCellStyle_ContentStyle;
+                xamlMember.Getter = get_133_CalendarCellStyle_ContentStyle;
+                xamlMember.Setter = set_133_CalendarCellStyle_ContentStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.CalendarCellStyle.DecorationStyle":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.CalendarCellStyle");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "DecorationStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_153_CalendarCellStyle_DecorationStyle;
-                xamlMember.Setter = set_153_CalendarCellStyle_DecorationStyle;
+                xamlMember.Getter = get_134_CalendarCellStyle_DecorationStyle;
+                xamlMember.Setter = set_134_CalendarCellStyle_DecorationStyle;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory.RangeToolDefaultTemplate":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "RangeToolDefaultTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_154_ImageEditorToolFactory_RangeToolDefaultTemplate;
-                xamlMember.Setter = set_154_ImageEditorToolFactory_RangeToolDefaultTemplate;
+                xamlMember.Getter = get_135_ImageEditorToolFactory_RangeToolDefaultTemplate;
+                xamlMember.Setter = set_135_ImageEditorToolFactory_RangeToolDefaultTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory.TextToolDefaultTemplate":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolFactory");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "TextToolDefaultTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_155_ImageEditorToolFactory_TextToolDefaultTemplate;
-                xamlMember.Setter = set_155_ImageEditorToolFactory_TextToolDefaultTemplate;
+                xamlMember.Getter = get_136_ImageEditorToolFactory_TextToolDefaultTemplate;
+                xamlMember.Setter = set_136_ImageEditorToolFactory_TextToolDefaultTemplate;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup.Tools":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Tools", "System.Collections.ObjectModel.ObservableCollection`1<Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool>");
-                xamlMember.Getter = get_156_ImageEditorToolGroup_Tools;
+                xamlMember.Getter = get_137_ImageEditorToolGroup_Tools;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.Name":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_157_ImageEditorTool_Name;
+                xamlMember.Getter = get_138_ImageEditorTool_Name;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.CollectionIndex":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "CollectionIndex", "Int32");
-                xamlMember.Getter = get_158_ImageEditorTool_CollectionIndex;
+                xamlMember.Getter = get_139_ImageEditorTool_CollectionIndex;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.Icon":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Icon", "String");
-                xamlMember.Getter = get_159_ImageEditorTool_Icon;
+                xamlMember.Getter = get_140_ImageEditorTool_Icon;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.IsWorking":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsWorking", "Boolean");
-                xamlMember.Getter = get_160_ImageEditorTool_IsWorking;
+                xamlMember.Getter = get_141_ImageEditorTool_IsWorking;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.SupportsComparison":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "SupportsComparison", "Boolean");
-                xamlMember.Getter = get_161_ImageEditorTool_SupportsComparison;
+                xamlMember.Getter = get_142_ImageEditorTool_SupportsComparison;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.IsSelected":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.Getter = get_162_ImageEditorTool_IsSelected;
-                xamlMember.Setter = set_162_ImageEditorTool_IsSelected;
+                xamlMember.Getter = get_143_ImageEditorTool_IsSelected;
+                xamlMember.Setter = set_143_ImageEditorTool_IsSelected;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool.Visibility":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorTool");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Visibility", "Windows.UI.Xaml.Visibility");
-                xamlMember.Getter = get_163_ImageEditorTool_Visibility;
+                xamlMember.Getter = get_144_ImageEditorTool_Visibility;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup.Icon":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Icon", "String");
-                xamlMember.Getter = get_164_ImageEditorToolGroup_Icon;
-                xamlMember.Setter = set_164_ImageEditorToolGroup_Icon;
+                xamlMember.Getter = get_145_ImageEditorToolGroup_Icon;
+                xamlMember.Setter = set_145_ImageEditorToolGroup_Icon;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup.Name":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_165_ImageEditorToolGroup_Name;
-                xamlMember.Setter = set_165_ImageEditorToolGroup_Name;
+                xamlMember.Getter = get_146_ImageEditorToolGroup_Name;
+                xamlMember.Setter = set_146_ImageEditorToolGroup_Name;
                 break;
             case "Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup.IsSelected":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Input.ImageEditor.ImageEditorToolGroup");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.Getter = get_166_ImageEditorToolGroup_IsSelected;
-                xamlMember.Setter = set_166_ImageEditorToolGroup_IsSelected;
+                xamlMember.Getter = get_147_ImageEditorToolGroup_IsSelected;
+                xamlMember.Setter = set_147_ImageEditorToolGroup_IsSelected;
                 break;
             case "Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter.Animation":
                 userType = (global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Telerik.UI.Xaml.Controls.Primitives.BusyIndicator.BusyIndicatorAnimationAdapter");
                 xamlMember = new global::TryClock.TryClock_WindowsPhone_XamlTypeInfo.XamlMember(this, "Animation", "Windows.UI.Xaml.Media.Animation.Storyboard");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_BusyIndicatorAnimationAdapter_Animation;
-                xamlMember.Setter = set_167_BusyIndicatorAnimationAdapter_Animation;
+                xamlMember.Getter = get_148_BusyIndicatorAnimationAdapter_Animation;
+                xamlMember.Setter = set_148_BusyIndicatorAnimationAdapter_Animation;
                 break;
             }
             return xamlMember;

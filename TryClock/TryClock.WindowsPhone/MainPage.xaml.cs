@@ -38,7 +38,9 @@ namespace TryClock
         ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
         private const string BT_NAME = "HC-06";
         private static DispatcherTimer dispatcherTimer;
-        private static ObservableCollection<double> cartesianChartData = new ObservableCollection<double>() {0 };
+        private static int MAX_X = 3600;
+        private static ObservableCollection<double> heartChartData = new ObservableCollection<double>() {};
+        private static ObservableCollection<double> movementChartData = new ObservableCollection<double>() { };
 
         public MainPage()
         {
@@ -47,17 +49,16 @@ namespace TryClock
             this.Metrics = new ObservableCollection<String>();
             // Subscribe to the NetworkAvailabilityChanged event
             NetworkInformation.NetworkStatusChanged += new NetworkStatusChangedEventHandler(Connection_NetworkStatusChanged);
-            FillMetricsList();
+            //FillMetricsList();
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
             SetAlarm();
             SetChartData();
             //FillCombobox();
-            this.myChart.Series[0].ItemsSource = CreateData();
             //timer 
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += DispatcherTimer_Tick;
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 300);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 500);
             dispatcherTimer.Start();
         }
 
@@ -68,15 +69,46 @@ namespace TryClock
                 Random rnd = new Random();
                 int heartRate = ((rnd.Next()) % 100);
                 heartTextBlock.Text = heartRate.ToString();
-                cartesianChartData.Add(heartRate);
-                String btSignal = App.RecieveBTSignal();
+                if (heartChartData.Count > 25)
+                {
+                    heartChartData.RemoveAt(0);
+                }
+                if (movementChartData.Count > MAX_X)
+                {
+                    movementChartData.Clear();
+                }
+                heartChartData.Add(heartRate);
+                String btSignal = App.lastRecieved;
+
+                bluetoothData.Text = btSignal;
+                movementChartData.Add(tryConvert(btSignal));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-            }
+            }  
+        }
 
-            
+        private double tryConvert(string s)
+        {
+            try
+            {
+                double res = Convert.ToDouble(s);
+                if(res > 1.0)
+                {
+                    res = 1.0;
+                }
+                if(res < 0)
+                {
+                    res = 0;
+                }
+                return res;
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine(e.Message);
+                return 0.0;
+            }
         }
 
         public class Data
@@ -109,8 +141,8 @@ namespace TryClock
 
         private void SetChartData()
         {
-            this.radChart.DataContext = cartesianChartData;
-            this.radChart2.DataContext = cartesianChartData;
+            this.radChartHeart.DataContext = heartChartData;
+            this.radChartMovement.DataContext = movementChartData;
         }
         
 
@@ -288,7 +320,9 @@ namespace TryClock
                             bluetoothStatus.Text = "Device is connected.";
                             deviceFound = true;
                             App.connectionParams.isConnectedToBluetooth = true;
-                            
+                            Action a = new Action(App.RecieveBTSignal);
+                            Task t = new Task(a);
+                            t.Start();
                         }
                         catch (Exception ex)
                         {
