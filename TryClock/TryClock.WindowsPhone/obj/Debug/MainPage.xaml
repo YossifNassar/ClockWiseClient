@@ -50,7 +50,7 @@
                     <TextBlock x:Name="heartTextBlock" FontSize="140" HorizontalAlignment="Left" Margin="76,164,0,0" TextWrapping="Wrap" Text="82" VerticalAlignment="Top"/>
                     <TextBlock x:Name="bmi" FontSize="30" HorizontalAlignment="Left" Margin="243,263,0,0" TextWrapping="Wrap" Text="bpm" VerticalAlignment="Top"/>
 
-                    <telerik:RadCartesianChart x:Name="radChart2" Margin="117,289,110,117" Foreground="Azure">
+                    <telerik:RadCartesianChart x:Name="radChartHeartMini" Margin="117,289,110,117" Foreground="Azure">
                         <telerik:RadCartesianChart.HorizontalAxis>
                             <telerik:CategoricalAxis/>
                         </telerik:RadCartesianChart.HorizontalAxis>
@@ -60,8 +60,6 @@
                         <telerik:LineSeries ItemsSource="{Binding}">
                         </telerik:LineSeries>
                     </telerik:RadCartesianChart>
-
-
                 </Grid>
 
             </PivotItem>
@@ -79,15 +77,25 @@
                         </telerik:LineSeries>
                     </telerik:RadCartesianChart>
                     <TextBlock FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Movement chart" VerticalAlignment="Top" Margin="120,202,0,0"/>
-                    <telerik:RadCartesianChart x:Name="radChartMovement" Margin="10,236,15,80" Foreground="Azure">
+
+                    <telerik:RadCartesianChart x:Name="movementChartHeart" Margin="0,225,10,35">
                         <telerik:RadCartesianChart.HorizontalAxis>
                             <telerik:CategoricalAxis/>
                         </telerik:RadCartesianChart.HorizontalAxis>
+
                         <telerik:RadCartesianChart.VerticalAxis>
                             <telerik:LinearAxis/>
                         </telerik:RadCartesianChart.VerticalAxis>
-                        <telerik:LineSeries ItemsSource="{Binding}">
-                        </telerik:LineSeries>
+
+                        <telerik:RadCartesianChart.Series>
+                            <telerik:BarSeries ItemsSource="{Binding}">
+                                <telerik:BarSeries.PointTemplates>
+                                    <DataTemplate>
+                                        <Rectangle Fill="{StaticResource PhoneForegroundBrush}"/>
+                                    </DataTemplate>
+                                </telerik:BarSeries.PointTemplates>
+                            </telerik:BarSeries>
+                        </telerik:RadCartesianChart.Series>
                     </telerik:RadCartesianChart>
 
                 </Grid>

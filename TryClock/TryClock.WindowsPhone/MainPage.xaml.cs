@@ -24,6 +24,7 @@ using Windows.Networking.Proximity;
 using Windows.Devices.Bluetooth.Rfcomm;
 using Windows.Devices.Enumeration;
 using Windows.UI.WebUI;
+using Telerik.UI.Xaml.Controls.Chart;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -78,10 +79,10 @@ namespace TryClock
                     movementChartData.Clear();
                 }
                 heartChartData.Add(heartRate);
-                String btSignal = App.lastRecieved;
+                double btMovement = App.lastMovement;
 
-                bluetoothData.Text = btSignal;
-                movementChartData.Add(tryConvert(btSignal));
+                bluetoothData.Text = "Last Movement Value: " + btMovement.ToString();
+                movementChartData.Add(analyse(btMovement));
             }
             catch (Exception ex)
             {
@@ -89,26 +90,19 @@ namespace TryClock
             }  
         }
 
-        private double tryConvert(string s)
+        private double analyse(double d)
         {
-            try
+            double res = d;
+            if(res > 1)
             {
-                double res = Convert.ToDouble(s);
-                if(res > 1.0)
-                {
-                    res = 1.0;
-                }
-                if(res < 0)
-                {
-                    res = 0;
-                }
-                return res;
+                return 1;
             }
-            catch(Exception e)
+            if(res < 0)
             {
-                Debug.WriteLine(e.Message);
-                return 0.0;
+                return 0;
             }
+            App.lastMovement = 0;
+            return res;
         }
 
         public class Data
@@ -142,7 +136,10 @@ namespace TryClock
         private void SetChartData()
         {
             this.radChartHeart.DataContext = heartChartData;
-            this.radChartMovement.DataContext = movementChartData;
+            this.radChartHeartMini.DataContext = heartChartData;
+            //this.radChartMovement.DataContext = movementChartData;
+            ChartSeries barSeries = this.movementChartHeart.Series[0];
+            barSeries.DataContext = movementChartData;
         }
         
 

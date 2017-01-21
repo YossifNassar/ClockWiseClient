@@ -44,7 +44,7 @@ namespace TryClock
         public static bluetoothConnectionParams connectionParams;
         public static int num;
         public static string res;
-        public static string lastRecieved = "";
+        public static double lastMovement = 0;
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -140,7 +140,7 @@ namespace TryClock
                     if (ch == '\n')
                     {
 
-                        App.lastRecieved = App.res;
+                        App.lastMovement = Convert.ToDouble(App.res);
                         App.res = "";
                     }
                     else
