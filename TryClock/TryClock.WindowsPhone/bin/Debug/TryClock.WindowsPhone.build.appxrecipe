@@ -697,11 +697,17 @@
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\active.png">
       <PackagePath>Images\active.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\alarm.png">
+      <PackagePath>Images\alarm.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\background.png">
       <PackagePath>Images\background.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\background2.png">
       <PackagePath>Images\background2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\bluetooth.png">
+      <PackagePath>Images\bluetooth.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Develop\TryClock\TryClock\TryClock.WindowsPhone\Images\circle.png">
       <PackagePath>Images\circle.png</PackagePath>

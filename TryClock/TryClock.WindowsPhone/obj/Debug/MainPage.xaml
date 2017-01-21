@@ -28,9 +28,11 @@
                         AlignmentX="Center">
                         </ImageBrush>
                     </Grid.Background>
-                    <TextBlock x:ConnectionId='1' x:Name="textBlock" FontSize="60" HorizontalAlignment="Left" Margin="109,168,0,0" TextWrapping="Wrap" Text="07:00" VerticalAlignment="Top"                          />
+                    <Image HorizontalAlignment="Left" Height="49" Margin="69,186,0,0" VerticalAlignment="Top" Width="56" Source="Images/alarm.png"/>
+                    <TextBlock x:ConnectionId='1' x:Name="textBlock" FontSize="60" HorizontalAlignment="Left" Margin="125,177,0,0" TextWrapping="Wrap" Text="07:00" VerticalAlignment="Top"                          />
                     <ToggleSwitch x:ConnectionId='2' x:Name="toggleSwitch" Header="Alarm" HorizontalAlignment="Right" Margin="0,280,83,0" VerticalAlignment="Top" Width="178"                               />
                     <TextBlock x:Name="bluetoothStatus" FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Device is not connected." VerticalAlignment="Top" Margin="94,445,0,0"/>
+                    <Image HorizontalAlignment="Left" Height="27" Margin="67,436,0,0" VerticalAlignment="Top" Width="37" Source="Images/bluetooth.png"/>
                     <ComboBox x:Name="comboDevice" Header="Select device" Visibility="Collapsed">
                     </ComboBox>
                 </Grid>

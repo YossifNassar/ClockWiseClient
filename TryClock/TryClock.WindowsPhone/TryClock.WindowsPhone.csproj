@@ -294,10 +294,12 @@
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Images\active.png" />
+    <Content Include="Images\alarm.png" />
     <Content Include="Images\background.png" />
     <Content Include="Images\background2.png" />
     <Content Include="Images\bg3.jpg" />
     <Content Include="Images\blueBackground.jpg" />
+    <Content Include="Images\bluetooth.png" />
     <Content Include="Images\circle.png" />
     <Content Include="Images\circle2.png" />
     <Content Include="Images\circle3.png" />

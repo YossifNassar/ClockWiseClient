@@ -199,10 +199,12 @@ MainPage.xbf
 SetAlarmPage.xbf
 TryClock.WindowsPhone.xr.xml
 Images\active.png
+Images\alarm.png
 Images\background.png
 Images\background2.png
 Images\bg3.jpg
 Images\blueBackground.jpg
+Images\bluetooth.png
 Images\circle.png
 Images\circle2.png
 Images\circle3.png
