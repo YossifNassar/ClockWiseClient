@@ -45,7 +45,7 @@ namespace TryClock
         public static int num;
         public static string res;
         public static double lastMovement = 0;
-        public static int lastHeartRate = 60;
+        public static int lastHeartRate = 0;
         private static bool isHeart = false;
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace TryClock
                     }
                     byte b = connectionParams.chatReader.ReadByte();
                     ch = Convert.ToChar(b);
-
+                   // Debug.WriteLine(ch);
                     if(ch == 'H')
                     {
                         isHeart = true;
@@ -121,10 +121,12 @@ namespace TryClock
                     {
                         isHeart = false;
                         continue;
-                    }
+                    } 
 
                     if (ch == '\n')
                     {
+                        App.lastHeartRate = Convert.ToInt32(App.res);
+                        App.lastMovement = Convert.ToDouble(App.res);
                         if (isHeart)
                         {
                             App.lastHeartRate = Convert.ToInt32(App.res);
@@ -132,7 +134,7 @@ namespace TryClock
                         else
                         {
                             App.lastMovement = Convert.ToDouble(App.res);
-                        }
+                        } 
                         App.res = "";
                     }
                     else

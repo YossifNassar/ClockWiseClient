@@ -56,14 +56,14 @@ namespace TryClock
             //FillMetricsList();
             this.DataContext = this;
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            SetAlarm();
+            //SetAlarm();
             SetChartData();
             //FillCombobox();
             //timer 
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += DispatcherTimer_Tick;
             dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, TICK);
-            dispatcherTimer.Start();
+       
         }
 
         private void DispatcherTimer_Tick(object sender, object e)
@@ -72,8 +72,8 @@ namespace TryClock
             {
                 heartImageVisible = heartImageVisible ? false : true;
                 Random rnd = new Random();
-                int delta = rnd.Next(-3,3);
-                App.lastHeartRate = Analyser.AnalyseHeartRate(App.lastHeartRate + delta);
+                //int delta = rnd.Next(-3,3);
+                //App.lastHeartRate = Analyser.AnalyseHeartRate(App.lastHeartRate + delta);
                 heartTextBlock.Text = App.lastHeartRate.ToString();
                 heartImage.Visibility = heartImageVisible ? Visibility.Visible : Visibility.Collapsed;
                 if (heartChartData.Count > MAX_X)
@@ -195,6 +195,11 @@ namespace TryClock
             }
         }
 
+        private void UnSetAlarm()
+        {
+            ToastNotificationManager.History.Clear();
+        }
+
         private async void Connection_NetworkStatusChanged(object sender)
         {
             Debug.WriteLine("Internet Connection changed");
@@ -239,7 +244,10 @@ namespace TryClock
             {
                 localSettings.Values["alarm_time"] = e.Parameter.ToString();
                 textBlock.Text = e.Parameter.ToString();
-                SetAlarm();
+                if(toggleSwitch.IsOn == true)
+                {
+                    SetAlarm();
+                }
             }    
         }
 
@@ -258,10 +266,13 @@ namespace TryClock
                     if (toggleSwitch.IsOn == true && App.connectionParams.isConnectedToBluetooth == false)
                     {
                         await connectToBT();
+                        
                     }
                     if (toggleSwitch.IsOn == false && App.connectionParams.isConnectedToBluetooth == true)
                     {
                         disconnectFromBT();
+                        dispatcherTimer.Stop();
+                        UnSetAlarm();
                     }
                 }
                 catch(Exception ex)
@@ -307,6 +318,8 @@ namespace TryClock
                             Action a = new Action(App.RecieveBTSignal);
                             Task t = new Task(a);
                             t.Start();
+                            dispatcherTimer.Start();
+                            SetAlarm();
                         }
                         catch (Exception ex)
                         {
