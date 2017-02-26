@@ -125,8 +125,8 @@ namespace TryClock
 
                     if (ch == '\n')
                     {
-                        App.lastHeartRate = Convert.ToInt32(App.res);
-                        App.lastMovement = Convert.ToDouble(App.res);
+                        //App.lastHeartRate = Convert.ToInt32(App.res);
+                        //App.lastMovement = Convert.ToDouble(App.res);
                         if (isHeart)
                         {
                             App.lastHeartRate = Convert.ToInt32(App.res);

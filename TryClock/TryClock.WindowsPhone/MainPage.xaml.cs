@@ -42,6 +42,9 @@ namespace TryClock
         private static DispatcherTimer dispatcherTimer;
         private static int MAX_X = 100;
         private static int TICK = 1000;
+        private static int inactive_time = 0;
+        private static int MAX_INACTIVE = 2;
+        private static bool active = false;
         private bool heartImageVisible = true;
         private static ObservableCollection<double> heartChartData = new ObservableCollection<double>() {};
         private static ObservableCollection<double> movementChartData = new ObservableCollection<double>() {};
@@ -86,7 +89,23 @@ namespace TryClock
                 }
                 heartChartData.Add(App.lastHeartRate);
                 double btMovement = App.lastMovement;
+
                 if(App.lastMovement == 0)
+                {
+                    inactive_time += TICK;
+                }
+                else
+                {
+                    active = true;
+                    inactive_time = 0;
+                }
+
+                if (inactive_time > MAX_INACTIVE * 1000 / TICK)
+                {
+                    active = false;
+                }
+
+                if (!active)
                 {
                     activityImage.Source = new BitmapImage(new Uri("ms-appx:///Images/inactive.png"));  
                     activityText.Text = "InActive";
@@ -99,6 +118,8 @@ namespace TryClock
 
                 bluetoothData.Text = "Last Movement Value: " + btMovement.ToString();
                 movementChartData.Add(Analyser.AnalyseMovement(btMovement));
+                App.lastMovement = 0;
+                App.lastHeartRate = 0;
             }
             catch (Exception ex)
             {

@@ -58,7 +58,7 @@
             </PivotItem>
             <PivotItem Header="Stats">
                 <Grid>
-                    <TextBlock FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Heart Rate Chart" VerticalAlignment="Top" Margin="116,193,0,0"/>
+                    <TextBlock FontSize="15" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Pulse Chart" VerticalAlignment="Top" Margin="116,193,0,0"/>
                     <telerik:RadCartesianChart x:Name="radChartHeart" Margin="10,12,15,304" Foreground="Azure">
                         <telerik:RadCartesianChart.HorizontalAxis>
                             <telerik:CategoricalAxis/>

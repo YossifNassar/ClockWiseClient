@@ -18,7 +18,6 @@ namespace TryClock.Logic
             {
                 return 0;
             }
-            App.lastMovement = 0;
             return d;
         }
 
